@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @DexteR-mask
+- 👋 Hi, I’m @Jaspreet Singh 
 - 👀 I’m interested in React Native, IOT, Blockchain, Linux, Oleds
 - 🌱 I’m currently learning Google Cloud Platform ,Kubernetes, Hackintosh,
 - 📫 How to reach me  "The quieter you become the more you hear about Me"
