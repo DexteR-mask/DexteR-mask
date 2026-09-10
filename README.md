@@ -1,12 +1,25 @@
 <div align="center">
 
-  <!-- Vintage Retro OS Workstation (Directly inspired by user uploaded images) -->
-  <!-- Automatic Dark Mode / Light Mode Switching -->
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/retro-os-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="./assets/retro-os-light.svg">
-    <img src="./assets/retro-os-light.svg" width="100%" alt="JaspreetOS 7.5 — Retro Developer Workstation" />
-  </picture>
+  <!-- Interactive Retro Workstation Theme Switcher (Click to Toggle) -->
+  <p align="center">
+    <img src="https://img.shields.io/badge/%F0%9F%8E%A8_THEME_SWITCHER-CLICK_A_MODE_BELOW_TO_SWITCH-1a1a1a?style=for-the-badge&logo=appveyor&logoColor=00f2fe" alt="Theme Switcher" />
+  </p>
+
+  <!-- Theme 1: Vintage Mac System 7 (Light Mode) -->
+  <details open>
+    <summary><b>☀️ [CLICK TO DISPLAY: VINTAGE MAC OS SYSTEM 7 — LIGHT THEME]</b></summary>
+    <br />
+    <img src="./assets/retro-os-light.svg" width="100%" alt="JaspreetOS 7.5 — Vintage Mac OS Light Workstation" />
+  </details>
+
+  <br />
+
+  <!-- Theme 2: Cyber Retro Obsidian (Dark Mode) -->
+  <details>
+    <summary><b>🌙 [CLICK TO DISPLAY: CYBER RETRO OBSIDIAN — DARK THEME]</b></summary>
+    <br />
+    <img src="./assets/retro-os-dark.svg" width="100%" alt="JaspreetOS 7.5 — Cyber Retro Dark Workstation" />
+  </details>
 
   <br />
 
