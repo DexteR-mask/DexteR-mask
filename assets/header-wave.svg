@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 230" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="waveBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07090e" />
+      <stop offset="50%" stop-color="#0d131f" />
+      <stop offset="100%" stop-color="#0a0f1d" />
+    </linearGradient>
+
+    <!-- Wave 1 Gradient -->
+    <linearGradient id="waveGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.35" />
+      <stop offset="50%" stop-color="#6366f1" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0.4" />
+    </linearGradient>
+
+    <!-- Wave 2 Gradient -->
+    <linearGradient id="waveGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#4f46e5" stop-opacity="0.65" />
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0.7" />
+    </linearGradient>
+
+    <!-- Wave 3 Front Gradient -->
+    <linearGradient id="waveGrad3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="40%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#9333ea" />
+    </linearGradient>
+
+    <!-- Text Glow Filter -->
+    <filter id="glowText" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .name-title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; font-weight: 800; font-size: 46px; fill: #ffffff; letter-spacing: -0.02em; }
+    .subtitle { font-family: "SF Mono", "Fira Code", monospace; font-size: 16px; fill: #38bdf8; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 600; }
+  </style>
+
+  <!-- Canvas Background -->
+  <rect width="1000" height="230" fill="url(#waveBg)" />
+
+  <!-- Subtle Ambient Grid Dots -->
+  <g opacity="0.15" fill="#38bdf8">
+    <circle cx="100" cy="40" r="1.5" /><circle cx="200" cy="40" r="1.5" /><circle cx="300" cy="40" r="1.5" />
+    <circle cx="400" cy="40" r="1.5" /><circle cx="500" cy="40" r="1.5" /><circle cx="600" cy="40" r="1.5" />
+    <circle cx="700" cy="40" r="1.5" /><circle cx="800" cy="40" r="1.5" /><circle cx="900" cy="40" r="1.5" />
+    <circle cx="150" cy="80" r="1.5" /><circle cx="250" cy="80" r="1.5" /><circle cx="350" cy="80" r="1.5" />
+    <circle cx="450" cy="80" r="1.5" /><circle cx="550" cy="80" r="1.5" /><circle cx="650" cy="80" r="1.5" />
+    <circle cx="750" cy="80" r="1.5" /><circle cx="850" cy="80" r="1.5" />
+  </g>
+
+  <!-- Layer 1 Back Wave -->
+  <path d="M 0 140 C 250 80, 450 190, 700 130 C 850 90, 950 120, 1000 110 L 1000 230 L 0 230 Z" fill="url(#waveGrad1)" />
+
+  <!-- Layer 2 Middle Wave -->
+  <path d="M 0 160 C 200 120, 400 200, 650 150 C 820 110, 920 180, 1000 150 L 1000 230 L 0 230 Z" fill="url(#waveGrad2)" />
+
+  <!-- Layer 3 Front Crisp Wave -->
+  <path d="M 0 185 C 220 150, 480 215, 720 175 C 860 150, 940 180, 1000 170 L 1000 230 L 0 230 Z" fill="url(#waveGrad3)" />
+
+  <!-- Foreground Typography -->
+  <g text-anchor="middle" transform="translate(500, 78)">
+    <text x="0" y="0" class="name-title" filter="url(#glowText)">Jaspreet Singh</text>
+    <text x="0" y="34" class="subtitle">Distributed Systems • High-Throughput APIs • Local AI</text>
+  </g>
+</svg>

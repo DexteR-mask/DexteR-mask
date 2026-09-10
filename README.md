@@ -1,15 +1,13 @@
 <div align="center">
 
-  <!-- 3D Ultra-Modern Developer Header Banner -->
+  <!-- Layered Gradient Wave Header Banner -->
   <a href="https://jaspreetlabs.is-a.dev/">
-    <img src="./assets/banner-3d.jpg" width="100%" alt="Jaspreet Singh - Distributed Systems & Backend Engineering" />
+    <img src="./assets/header-wave.svg" width="100%" alt="Jaspreet Singh - Systems & Architecture" />
   </a>
-
-  <br /><br />
 
   <!-- Dynamic Typing Subtitle Animation -->
   <a href="https://jaspreetlabs.is-a.dev/">
-    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=22&pause=1500&color=38BDF8&center=true&vCenter=true&width=650&height=46&lines=Backend+Systems+%26+Distributed+Architecture;High-Throughput+APIs+%26+Payment+Pipelines;Local+GPU+Inference+Clusters+(vLLM+%E2%80%A2+llama.cpp);Developer+Tooling+%26+High-Concurrency+Engines" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=20&pause=1400&color=38BDF8&center=true&vCenter=true&width=640&height=44&lines=Backend+Systems+%26+Distributed+Architecture;High-Throughput+APIs+%26+Payment+Pipelines;Local+GPU+Inference+Clusters+(vLLM+%E2%80%A2+llama.cpp);Developer+Tooling+%26+High-Concurrency+Engines" alt="Typing SVG" />
   </a>
 
   <br />
@@ -29,50 +27,37 @@
     </a>
   </p>
 
+  <!-- Waving Gradient Wave Divider -->
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0284c7,6366f1,9333ea&height=70&section=footer" width="100%" alt="Wave Divider" />
+
 </div>
 
 <br />
 
-### ⚡ About Me & What I'm Obsessed With
+### ⚡ About Me & Engineering Mindset
 
-<table>
-  <tr>
-    <td width="72%" valign="top">
-      <p>I'm a backend and systems engineer driven by curiosity about how software behaves under real concurrency and scale. I focus on distributed architecture, low-latency API design, and building resilient, deterministic microservices.</p>
-      <p>When I'm not untangling payment webhooks or optimizing database query planners, you'll usually find me running self-hosted AI models on bare metal GPUs, crafting developer CLIs to eliminate workflow friction, or exploring protocol internals.</p>
-      <ul>
-        <li>🔭 <b>What I build:</b> High-throughput backend services, resilient transaction pipelines, and developer tooling.</li>
-        <li>🧠 <b>Current rabbit hole:</b> Running private local LLMs with GPU acceleration (<code>vLLM</code>, <code>llama.cpp</code>) and streaming agent architectures.</li>
-        <li>⚡ <b>Core philosophy:</b> Make systems fast, make failure states predictable, and automate anything repeated more than twice.</li>
-        <li>💬 <b>Ask me about:</b> Concurrency edge cases, payment idempotency, Go microservices, and local GPU setups.</li>
-      </ul>
-    </td>
-    <td width="28%" align="center" valign="middle">
-      <img src="./assets/cube-3d.jpg" width="220px" alt="3D Server Node" style="border-radius: 12px;" />
-    </td>
-  </tr>
-</table>
+I'm a backend and systems engineer fascinated by how complex software behaves under real concurrency and high transaction volume. My focus is on distributed architecture, low-latency API design, and building resilient microservices that fail predictably and recover seamlessly.
+
+When I'm not architecting payment webhooks or tuning database query plans, you'll find me running private local LLM clusters on bare-metal GPUs, engineering terminal developer tools, or exploring distributed consensus protocols.
+
+- 🔭 **What I build:** High-throughput backend services, deterministic transaction lifecycles, and developer platforms.
+- 🧠 **Current rabbit hole:** Running private local LLMs with GPU acceleration (`vLLM`, `llama.cpp`) and streaming agent architectures.
+- ⚡ **Core philosophy:** Make systems fast, make failure states predictable, and automate anything you do more than twice.
+- 💬 **Ask me about:** Concurrency edge cases, payment idempotency, Go microservices, and local GPU setups.
 
 <br />
 
-### 🖥️ System Environment & Runtime Specs
+---
 
-```bash
-jaspreet@distributed-cluster:~$ neofetch --profile
-```
-```yaml
-Host: Custom GPU Node (Bare-Metal AMD ROCm Cluster)
-Kernel: Linux 6.12.8-hardened x86_64
-Architecture: Distributed Microservices • Event-Driven • Idempotent Queues
-Primary Runtimes: Go (Golang) • TypeScript • Node.js
-Data & Caching: PostgreSQL • MongoDB (Pipelines) • Redis • MySQL
-Infra & Virtualization: Docker • Docker Compose • Cloudflare Pages • Linux Daemons
-AI & Inference: vLLM • llama.cpp • Open WebUI (Local 70B Quantized Models)
-Specialization: Payment Gateways (Stripe • Braintree) • High-Throughput APIs • Dev CLIs
-Uptime: 99.99% Deterministic Execution
-```
+### 📊 System Telemetry & Architecture Dashboard
+
+<div align="center">
+  <img src="./assets/system-metrics-ui.svg" width="100%" alt="System Telemetry & Architecture Dashboard" />
+</div>
 
 <br />
+
+---
 
 ### 🛠️ Technical Arsenal
 
@@ -88,7 +73,7 @@ Uptime: 99.99% Deterministic Execution
 <br />
 
 <details open>
-<summary><b>🔍 Core Competencies & Architecture Strengths</b></summary>
+<summary><b>🔍 Core Competencies & Architecture Breakdown</b></summary>
 <br />
 
 | Domain | Core Technologies |
@@ -100,6 +85,11 @@ Uptime: 99.99% Deterministic Execution
 | **DevOps & Infrastructure** | Docker, Docker Compose, Linux/Unix Environments, Cloudflare Pages, Git, CI/CD |
 
 </details>
+
+<br />
+
+<!-- Wave Section Divider -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=9333ea,6366f1,0284c7&height=65&section=footer" width="100%" alt="Section Divider Wave" />
 
 <br />
 
@@ -127,7 +117,7 @@ Uptime: 99.99% Deterministic Execution
       <p align="center">
         <img src="https://img.shields.io/badge/System-Self_Hosted-6366F1?style=flat-square&logo=openai&logoColor=white" alt="System" />
       </p>
-      <p>Private GPU-accelerated local inference cluster built on bare metal AMD hardware.</p>
+      <p>Private GPU-accelerated local inference cluster built on bare-metal AMD hardware.</p>
       <ul>
         <li>Configured high-throughput vLLM & llama.cpp inference pipelines.</li>
         <li>Microservices orchestration via Docker Compose and Open WebUI.</li>
@@ -185,5 +175,12 @@ Uptime: 99.99% Deterministic Execution
       <img src="https://img.shields.io/badge/Email-jaspreet.singh.tech%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
     </a>
   </p>
+
+  <br />
+
+  <!-- Closing Gradient Wave Footer Banner -->
+  <a href="https://jaspreetlabs.is-a.dev/">
+    <img src="./assets/footer-wave.svg" width="100%" alt="Footer Wave Banner" />
+  </a>
 
 </div>
