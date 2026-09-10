@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 880 380" width="100%" height="100%">
+  <defs>
+    <style>
+      @keyframes pulseDot {
+        0%, 100% { opacity: 1; transform: scale(1); }
+        50% { opacity: 0.35; transform: scale(0.85); }
+      }
+      .beacon { animation: pulseDot 2s infinite ease-in-out; fill: #6fa96c; }
+      .mono { font-family: "SF Mono", "Fira Code", "Courier New", monospace; letter-spacing: 0.03em; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+
+      .card-bg { fill: #141416; stroke: #26262a; }
+      .proj-box { fill: #0d0d0f; stroke: #222226; transition: stroke 0.2s; }
+      .proj-box:hover { stroke: #6fa96c; }
+      .title-txt { fill: #f4f4f4; font-weight: 800; font-size: 13.5px; }
+      .tag-box { fill: #18181c; stroke: #2e2e36; }
+      .sage-txt { fill: #6fa96c; }
+      .sub-txt { fill: #8c8c94; font-size: 11.5px; line-height: 1.5; }
+      a { cursor: pointer; text-decoration: none; }
+    </style>
+  </defs>
+
+  <!-- 1. Outer Matte Charcoal Panel -->
+  <rect x="2" y="2" width="876" height="376" rx="12" class="card-bg" stroke-width="1.5" />
+
+  <!-- 2. Minimalist Header Strip -->
+  <line x1="2" y1="44" x2="878" y2="44" stroke="#222226" stroke-width="1.5" />
+  
+  <g transform="translate(24, 16)">
+    <circle cx="6" cy="6" r="4.5" fill="#2c2c30" />
+    <circle cx="20" cy="6" r="4.5" fill="#2c2c30" />
+    <circle cx="34" cy="6" r="4.5" fill="#2c2c30" />
+
+    <text x="54" y="10" class="mono" font-size="11.5" font-weight="700" fill="#787880">
+      jaspreet@workstation // ~/production-systems
+    </text>
+  </g>
+
+  <!-- Status Pill -->
+  <g transform="translate(710, 12)">
+    <rect x="0" y="0" width="142" height="22" rx="11" fill="#1a1f1b" stroke="#2e4232" stroke-width="1" />
+    <circle cx="14" cy="11" r="3.5" class="beacon" />
+    <text x="24" y="15" class="mono" font-size="10" font-weight="800" fill="#6fa96c">4 ACTIVE BUILDS</text>
+  </g>
+
+  <!-- 3. 4 Featured Project Cards -->
+  <!-- Project 01: Bonds India Analytics -->
+  <a xlink:href="https://bondsindia-production.up.railway.app/" target="_blank">
+    <g transform="translate(36, 64)">
+      <rect x="0" y="0" width="390" height="124" rx="8" class="proj-box" stroke-width="1.5" />
+      
+      <!-- Header Row -->
+      <rect x="14" y="12" width="92" height="20" rx="4" class="tag-box" stroke-width="1" />
+      <text x="60" y="26" text-anchor="middle" class="mono" font-size="9.5" font-weight="800" fill="#d0d0d6">01 // FINTECH</text>
+
+      <text x="114" y="27" class="mono sage-txt" font-size="11" font-weight="800">● LIVE ON RAILWAY ↗</text>
+
+      <text x="14" y="54" class="sans title-txt">Bonds India Analytics Engine</text>
+      <text x="14" y="76" class="sans sub-txt">
+        <tspan x="14" dy="0">Real-time corporate bond analytics across NSE &amp; BSE with</tspan>
+        <tspan x="14" dy="18">dynamic schema normalization &amp; aggregated yield pipelines.</tspan>
+      </text>
+      <text x="14" y="112" class="mono sage-txt" font-size="10.5" font-weight="700">React 19 • TypeScript • Node.js • MongoDB • Docker</text>
+    </g>
+  </a>
+
+  <!-- Project 02: Bare-Metal Local GPU Inference -->
+  <g transform="translate(454, 64)">
+    <rect x="0" y="0" width="390" height="124" rx="8" class="proj-box" stroke-width="1.5" />
+    
+    <!-- Header Row -->
+    <rect x="14" y="12" width="102" height="20" rx="4" class="tag-box" stroke-width="1" />
+    <text x="65" y="26" text-anchor="middle" class="mono" font-size="9.5" font-weight="800" fill="#d0d0d6">02 // LOCAL AI</text>
+
+    <text x="124" y="27" class="mono sage-txt" font-size="11" font-weight="800">● BARE-METAL CLUSTER</text>
+
+    <text x="14" y="54" class="sans title-txt">Bare-Metal Local GPU Inference</text>
+    <text x="14" y="76" class="sans sub-txt">
+      <tspan x="14" dy="0">Private GPU-accelerated local inference cluster engineered</tspan>
+      <tspan x="14" dy="18">for sub-second first-token streaming on bare-metal AMD ROCm.</tspan>
+    </text>
+    <text x="14" y="112" class="mono sage-txt" font-size="10.5" font-weight="700">vLLM • llama.cpp • Docker • ROCm • Python</text>
+  </g>
+
+  <!-- Project 03: CLI Hot-Reload Dev Engine -->
+  <g transform="translate(36, 204)">
+    <rect x="0" y="0" width="390" height="124" rx="8" class="proj-box" stroke-width="1.5" />
+    
+    <!-- Header Row -->
+    <rect x="14" y="12" width="94" height="20" rx="4" class="tag-box" stroke-width="1" />
+    <text x="61" y="26" text-anchor="middle" class="mono" font-size="9.5" font-weight="800" fill="#d0d0d6">03 // TOOLING</text>
+
+    <text x="116" y="27" class="mono sage-txt" font-size="11" font-weight="800">● INTERNAL CORE TOOL</text>
+
+    <text x="14" y="54" class="sans title-txt">CLI Hot-Reload Dev Engine</text>
+    <text x="14" y="76" class="sans sub-txt">
+      <tspan x="14" dy="0">Terminal-first file watcher with WebSocket incremental</tspan>
+      <tspan x="14" dy="18">dispatch, slashing rebuild iteration cycles by &gt; 70% across peers.</tspan>
+    </text>
+    <text x="14" y="112" class="mono sage-txt" font-size="10.5" font-weight="700">Node.js • WebSockets • Commander.js • TypeScript</text>
+  </g>
+
+  <!-- Project 04: Universal Database Admin Suite -->
+  <g transform="translate(454, 204)">
+    <rect x="0" y="0" width="390" height="124" rx="8" class="proj-box" stroke-width="1.5" />
+    
+    <!-- Header Row -->
+    <rect x="14" y="12" width="112" height="20" rx="4" class="tag-box" stroke-width="1" />
+    <text x="70" y="26" text-anchor="middle" class="mono" font-size="9.5" font-weight="800" fill="#d0d0d6">04 // ADMIN OPS</text>
+
+    <text x="134" y="27" class="mono sage-txt" font-size="11" font-weight="800">● 10k+ ROWS ONLINE</text>
+
+    <text x="14" y="54" class="sans title-txt">Universal Database Admin Suite</text>
+    <text x="14" y="76" class="sans sub-txt">
+      <tspan x="14" dy="0">Database-agnostic operations cockpit handling complex</tspan>
+      <tspan x="14" dy="18">cross-database queries with TanStack virtualized tables.</tspan>
+    </text>
+    <text x="14" y="112" class="mono sage-txt" font-size="10.5" font-weight="700">React • TanStack Table • Shadcn UI • Express</text>
+  </g>
+
+  <!-- 4. Bottom Stamp Bar -->
+  <g transform="translate(36, 342)">
+    <line x1="0" y1="0" x2="808" y2="0" stroke="#222226" stroke-width="1" />
+    <text x="0" y="22" class="mono" font-size="10" font-weight="700" fill="#787880">
+      ALL PRODUCTION BUILDS DEPLOYED // AUTOMATED CI/CD // ZERO REGRESSION
+    </text>
+    <text x="808" y="22" text-anchor="end" class="mono" font-size="10" font-weight="800" fill="#6fa96c">
+      ● VERIFIED SYSTEMS
+    </text>
+  </g>
+</svg>

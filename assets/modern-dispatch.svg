@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 880 320" width="100%" height="100%">
+  <defs>
+    <style>
+      @keyframes pulseDot {
+        0%, 100% { opacity: 1; transform: scale(1); }
+        50% { opacity: 0.35; transform: scale(0.85); }
+      }
+      .beacon { animation: pulseDot 2s infinite ease-in-out; fill: #6fa96c; }
+      .mono { font-family: "SF Mono", "Fira Code", "Courier New", monospace; letter-spacing: 0.03em; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+
+      .card-bg { fill: #141416; stroke: #26262a; }
+      .box-bg { fill: #0d0d0f; stroke: #222226; transition: stroke 0.2s; }
+      .box-bg:hover { stroke: #6fa96c; }
+      .tag-box { fill: #18181c; stroke: #2e2e36; }
+      .title-txt { fill: #f4f4f4; font-weight: 800; font-size: 13.5px; }
+      .sub-txt { fill: #8c8c94; font-size: 11.5px; }
+      .sage-txt { fill: #6fa96c; }
+      a { cursor: pointer; text-decoration: none; }
+    </style>
+  </defs>
+
+  <!-- 1. Outer Matte Charcoal Panel -->
+  <rect x="2" y="2" width="876" height="316" rx="12" class="card-bg" stroke-width="1.5" />
+
+  <!-- 2. Minimalist Header Strip -->
+  <line x1="2" y1="44" x2="878" y2="44" stroke="#222226" stroke-width="1.5" />
+  
+  <g transform="translate(24, 16)">
+    <circle cx="6" cy="6" r="4.5" fill="#2c2c30" />
+    <circle cx="20" cy="6" r="4.5" fill="#2c2c30" />
+    <circle cx="34" cy="6" r="4.5" fill="#2c2c30" />
+
+    <text x="54" y="10" class="mono" font-size="11.5" font-weight="700" fill="#787880">
+      jaspreet@workstation // ~/direct-dispatch
+    </text>
+  </g>
+
+  <!-- Status Pill -->
+  <g transform="translate(686, 12)">
+    <rect x="0" y="0" width="166" height="22" rx="11" fill="#1a1f1b" stroke="#2e4232" stroke-width="1" />
+    <circle cx="14" cy="11" r="3.5" class="beacon" />
+    <text x="24" y="15" class="mono" font-size="10" font-weight="800" fill="#6fa96c">OPEN FOR DISPATCH</text>
+  </g>
+
+  <!-- 3. Communication Channels (4 Box Grid) -->
+  <!-- Channel 01: Live Portfolio -->
+  <a xlink:href="https://jaspreetlabs.is-a.dev/" target="_blank">
+    <g transform="translate(36, 64)">
+      <rect x="0" y="0" width="390" height="88" rx="8" class="box-bg" stroke-width="1.5" />
+      <rect x="14" y="12" width="94" height="20" rx="4" class="tag-box" stroke-width="1" />
+      <text x="61" y="26" text-anchor="middle" class="mono" font-size="9.5" font-weight="800" fill="#d0d0d6">01 // DOMAIN</text>
+      <text x="116" y="27" class="mono sage-txt" font-size="11" font-weight="800">● LIVE ONLINE ↗</text>
+
+      <text x="14" y="52" class="sans title-txt">jaspreetlabs.is-a.dev</text>
+      <text x="14" y="72" class="mono sub-txt">Interactive web showcase &amp; project index</text>
+    </g>
+  </a>
+
+  <!-- Channel 02: Resume & ATS CV -->
+  <a xlink:href="https://jaspreetlabs.is-a.dev/resume/" target="_blank">
+    <g transform="translate(454, 64)">
+      <rect x="0" y="0" width="390" height="88" rx="8" class="box-bg" stroke-width="1.5" />
+      <rect x="14" y="12" width="94" height="20" rx="4" class="tag-box" stroke-width="1" />
+      <text x="61" y="26" text-anchor="middle" class="mono" font-size="9.5" font-weight="800" fill="#d0d0d6">02 // DOSSIER</text>
+      <text x="116" y="27" class="mono sage-txt" font-size="11" font-weight="800">● ATS-VERIFIED ↗</text>
+
+      <text x="14" y="52" class="sans title-txt">jaspreetlabs.is-a.dev/resume/</text>
+      <text x="14" y="72" class="mono sub-txt">Clean ATS curriculum vitae &amp; technical specs</text>
+    </g>
+  </a>
+
+  <!-- Channel 03: LinkedIn -->
+  <a xlink:href="https://www.linkedin.com/in/jaspreet-singh-71578a220/" target="_blank">
+    <g transform="translate(36, 164)">
+      <rect x="0" y="0" width="390" height="88" rx="8" class="box-bg" stroke-width="1.5" />
+      <rect x="14" y="12" width="102" height="20" rx="4" class="tag-box" stroke-width="1" />
+      <text x="65" y="26" text-anchor="middle" class="mono" font-size="9.5" font-weight="800" fill="#d0d0d6">03 // NETWORK</text>
+      <text x="124" y="27" class="mono sage-txt" font-size="11" font-weight="800">● CONNECT ↗</text>
+
+      <text x="14" y="52" class="sans title-txt">linkedin.com/in/jaspreet-singh-71578a220</text>
+      <text x="14" y="72" class="mono sub-txt">Professional engineering network &amp; endorsements</text>
+    </g>
+  </a>
+
+  <!-- Channel 04: Direct Email -->
+  <a xlink:href="mailto:jaspreet.singh.tech@gmail.com" target="_blank">
+    <g transform="translate(454, 164)">
+      <rect x="0" y="0" width="390" height="88" rx="8" class="box-bg" stroke-width="1.5" />
+      <rect x="14" y="12" width="94" height="20" rx="4" class="tag-box" stroke-width="1" />
+      <text x="61" y="26" text-anchor="middle" class="mono" font-size="9.5" font-weight="800" fill="#d0d0d6">04 // DIRECT</text>
+      <text x="116" y="27" class="mono sage-txt" font-size="11" font-weight="800">● HIGH PRIORITY ↗</text>
+
+      <text x="14" y="52" class="sans title-txt">jaspreet.singh.tech@gmail.com</text>
+      <text x="14" y="72" class="mono sub-txt">Encrypted inbox for contracts, roles &amp; architecture</text>
+    </g>
+  </a>
+
+  <!-- 4. Terminal Diagnostics Ping Footer -->
+  <g transform="translate(36, 270)">
+    <rect x="0" y="0" width="808" height="34" rx="6" fill="#0d0d0f" stroke="#1f1f24" stroke-width="1" />
+    <text x="14" y="22" class="mono" font-size="11.5" fill="#787880">
+      <tspan fill="#6fa96c">$</tspan> ping -c 1 jaspreetlabs.is-a.dev <tspan fill="#4e4e56">//</tspan> <tspan fill="#8c8c94">64 bytes from 104.21.48.243: icmp_seq=1 ttl=58 time=3.82 ms</tspan> <tspan fill="#6fa96c">[STATUS: OK]</tspan>
+    </text>
+  </g>
+
+</svg>

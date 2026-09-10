@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 340" width="100%" height="100%">
+  <defs>
+    <style>
+      @keyframes pulseDot {
+        0%, 100% { opacity: 1; transform: scale(1); }
+        50% { opacity: 0.35; transform: scale(0.85); }
+      }
+      .beacon { animation: pulseDot 2s infinite ease-in-out; fill: #6fa96c; }
+      .mono { font-family: "SF Mono", "Fira Code", "Courier New", monospace; letter-spacing: 0.03em; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+
+      .card-bg { fill: #141416; stroke: #26262a; }
+      .quad-box { fill: #0d0d0f; stroke: #222226; }
+      .title-txt { fill: #f4f4f4; font-weight: 800; font-size: 13.5px; }
+      .tag-box { fill: #18181c; stroke: #2e2e36; }
+      .sage-txt { fill: #6fa96c; }
+      .sub-txt { fill: #8c8c94; font-size: 11px; }
+    </style>
+  </defs>
+
+  <!-- 1. Outer Matte Charcoal Panel -->
+  <rect x="2" y="2" width="876" height="336" rx="12" class="card-bg" stroke-width="1.5" />
+
+  <!-- 2. Minimalist Header Strip -->
+  <line x1="2" y1="44" x2="878" y2="44" stroke="#222226" stroke-width="1.5" />
+  
+  <g transform="translate(24, 16)">
+    <circle cx="6" cy="6" r="4.5" fill="#2c2c30" />
+    <circle cx="20" cy="6" r="4.5" fill="#2c2c30" />
+    <circle cx="34" cy="6" r="4.5" fill="#2c2c30" />
+
+    <text x="54" y="10" class="mono" font-size="11.5" font-weight="700" fill="#787880">
+      jaspreet@workstation // ~/technical-capabilities
+    </text>
+  </g>
+
+  <!-- Status Pill -->
+  <g transform="translate(690, 12)">
+    <rect x="0" y="0" width="162" height="22" rx="11" fill="#1a1f1b" stroke="#2e4232" stroke-width="1" />
+    <circle cx="14" cy="11" r="3.5" class="beacon" />
+    <text x="24" y="15" class="mono" font-size="10" font-weight="800" fill="#6fa96c">18 CAPABILITIES ACTIVE</text>
+  </g>
+
+  <!-- 3. 4 Categorized Stack Sectors -->
+  <!-- Sector 1: Languages & Runtimes -->
+  <g transform="translate(36, 64)">
+    <rect x="0" y="0" width="390" height="98" rx="8" class="quad-box" stroke-width="1.5" />
+    <rect x="14" y="12" width="112" height="20" rx="4" class="tag-box" stroke-width="1" />
+    <text x="70" y="26" text-anchor="middle" class="mono" font-size="9.5" font-weight="800" fill="#d0d0d6">01 // LANGUAGES</text>
+
+    <text x="136" y="27" class="mono sage-txt" font-size="12" font-weight="800">Go • Node.js • TypeScript</text>
+    <text x="14" y="58" class="mono" font-size="11.5" font-weight="700" fill="#f4f4f4">Python • C++ • Bash Scripting • WebSockets</text>
+    <text x="14" y="80" class="sans sub-txt">Compiled microservices, async event loops, and type-safe architectures.</text>
+  </g>
+
+  <!-- Sector 2: Fintech & Payment Cores -->
+  <g transform="translate(454, 64)">
+    <rect x="0" y="0" width="390" height="98" rx="8" class="quad-box" stroke-width="1.5" />
+    <rect x="14" y="12" width="102" height="20" rx="4" class="tag-box" stroke-width="1" />
+    <text x="65" y="26" text-anchor="middle" class="mono" font-size="9.5" font-weight="800" fill="#d0d0d6">02 // FINTECH</text>
+
+    <text x="126" y="27" class="mono sage-txt" font-size="12" font-weight="800">Stripe • Braintree (PayPal)</text>
+    <text x="14" y="58" class="mono" font-size="11.5" font-weight="700" fill="#f4f4f4">Idempotency Keys • Webhooks • State Machines</text>
+    <text x="14" y="80" class="sans sub-txt">Deterministic lifecycle locking, replay defense, and automated refunds/voids.</text>
+  </g>
+
+  <!-- Sector 3: Persistence & Data Stores -->
+  <g transform="translate(36, 178)">
+    <rect x="0" y="0" width="390" height="98" rx="8" class="quad-box" stroke-width="1.5" />
+    <rect x="14" y="12" width="112" height="20" rx="4" class="tag-box" stroke-width="1" />
+    <text x="70" y="26" text-anchor="middle" class="mono" font-size="9.5" font-weight="800" fill="#d0d0d6">03 // DATABASES</text>
+
+    <text x="136" y="27" class="mono sage-txt" font-size="12" font-weight="800">MongoDB • PostgreSQL • MySQL</text>
+    <text x="14" y="58" class="mono" font-size="11.5" font-weight="700" fill="#f4f4f4">Redis Cache • Aggregation Pipelines • Schemas</text>
+    <text x="14" y="80" class="sans sub-txt">Query planner optimization, distributed cache invalidation, and data integrity.</text>
+  </g>
+
+  <!-- Sector 4: Local AI & Infrastructure -->
+  <g transform="translate(454, 178)">
+    <rect x="0" y="0" width="390" height="98" rx="8" class="quad-box" stroke-width="1.5" />
+    <rect x="14" y="12" width="116" height="20" rx="4" class="tag-box" stroke-width="1" />
+    <text x="72" y="26" text-anchor="middle" class="mono" font-size="9.5" font-weight="800" fill="#d0d0d6">04 // LOCAL AI &amp; OPS</text>
+
+    <text x="140" y="27" class="mono sage-txt" font-size="12" font-weight="800">vLLM • llama.cpp • ROCm</text>
+    <text x="14" y="58" class="mono" font-size="11.5" font-weight="700" fill="#f4f4f4">Docker Compose • Linux Kernel • Cloudflare</text>
+    <text x="14" y="80" class="sans sub-txt">Bare-metal GPU orchestration, paged KV-cache, and streaming API proxies.</text>
+  </g>
+
+  <!-- 4. Bottom Stamp Bar -->
+  <g transform="translate(36, 298)">
+    <line x1="0" y1="0" x2="808" y2="0" stroke="#222226" stroke-width="1" />
+    <text x="0" y="22" class="mono" font-size="10" font-weight="700" fill="#787880">
+      ZERO FOREIGN DEPENDENCIES // DETERMINISTIC BUILDS // CONTAINERIZED
+    </text>
+    <text x="808" y="22" text-anchor="end" class="mono" font-size="10" font-weight="800" fill="#6fa96c">
+      ● 100% PRODUCTION READY
+    </text>
+  </g>
+</svg>
