@@ -9,7 +9,7 @@
 
   <br />
 
-  <!-- Retro High-Contrast Action Buttons -->
+  <!-- Quick Action Navigation -->
   <p align="center">
     <a href="https://jaspreetlabs.is-a.dev/">
       <img src="https://img.shields.io/badge/%F0%9F%8C%90_LIVE_PORTFOLIO-jaspreetlabs.is--a.dev-090d16?style=for-the-badge&logo=googlechrome&logoColor=00f2fe" alt="Portfolio" />
@@ -32,21 +32,27 @@
 
 <br />
 
-## ⚡ Who I Am & What I Build
+### ⚡ Core Engineering Pillars
 
-I am a **Backend & Distributed Systems Engineer** with **3+ years of production experience** specializing in high-concurrency payment lifecycles, Go microservices, and developer platforms. I focus on deterministic state machines, low-latency API design, and resilient backend architectures.
+<div align="center">
+  <!-- Visual 4-Pillar Infographic Dashboard -->
+  <img src="./assets/visual-pillars.svg" width="100%" alt="Core Engineering Pillars Dashboard" />
+</div>
 
-- 🏢 **Current Experience:** Backend / Full Stack Engineer at **Protokol.io (Native Teams)** (2024 – Present).
-- 💳 **Financial Systems:** Engineered end-to-end payment gateway integrations in **Go** for **Stripe** and **Braintree (PayPal)**, including automated refunds, voids, idempotent state machines, and cryptographic webhook verification.
-- 🧠 **Local AI Clusters:** Architecting and maintaining private GPU-accelerated local inference clusters (**vLLM**, **llama.cpp**, **ROCm**) on bare-metal hardware for zero-latency streaming AI workflows.
-- ⚡ **Developer Platforms:** Built CLI-driven hot reload engines using **Node.js & WebSockets** that eliminated rebuild bottlenecks across 15+ engineering peers.
-- 📦 **SDKs & Micro-Frontends:** Authored and maintained production TypeScript build pipelines supporting 8+ client micro-frontends with zero regression.
+<br />
+
+### 🛰️ Live Architecture Pipelines
+
+<div align="center">
+  <!-- Visual End-to-End Architecture Pipelines -->
+  <img src="./assets/visual-architecture.svg" width="100%" alt="Visual Systems Architecture Pipelines" />
+</div>
 
 <br />
 
 ---
 
-## 🛠️ Technical Stack & Tools I Use
+### 🛠️ Technical Arsenal & Tools
 
 <div align="center">
 
@@ -59,77 +65,47 @@ I am a **Backend & Distributed Systems Engineer** with **3+ years of production 
 
 <br />
 
-```text
-[01] CORE LANGUAGES       : Go (Golang) • Node.js • TypeScript • JavaScript • Python • C++ • Bash
-[02] FINANCIAL ENGINES    : Stripe API • Braintree (PayPal) • Idempotency Systems • Webhook Security
-[03] DATA PERSISTENCE     : MongoDB (Aggregation Pipelines) • PostgreSQL • MySQL • Redis Cache
-[04] LOCAL AI & INFERENCE : vLLM • llama.cpp • Docker & Compose • ROCm • Linux / Unix Runtimes
-[05] CLOUD & DEVOPS       : AWS • Cloudflare Pages • Docker Compose • Git • CI/CD Pipelines
-```
-
-<br />
-
 ---
 
-## 🚀 Featured Production Systems
+### 🚀 Production Systems & Projects
 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3 align="center">📈 Bonds India Analytics Engine</h3>
-      <p align="center">
+      <h4>📈 Bonds India Analytics Engine</h4>
+      <p>
         <a href="https://bondsindia-production.up.railway.app/">
           <img src="https://img.shields.io/badge/LIVE_DEMO-%E2%86%97_ONLINE-059669?style=flat-square&logo=render&logoColor=ffffff" alt="Live Demo" />
         </a>
       </p>
-      <p>Full-scale financial analytics platform tracking and querying corporate bond securities across NSE &amp; BSE.</p>
-      <ul>
-        <li><b>Metadata-driven architecture:</b> Dynamic schema normalization across fluctuating market sources.</li>
-        <li><b>Aggregated query pipelines:</b> Real-time computation of bond yields, tenure risks, and credit ratings.</li>
-        <li><b>Zero-downtime deployment:</b> Multi-stage Docker containerization on Railway.</li>
-      </ul>
-      <p><b>Stack:</b> <code>React 19</code> <code>TypeScript</code> <code>Node.js</code> <code>MongoDB</code> <code>TanStack</code></p>
+      <p><b>Real-time corporate debt analytics across NSE &amp; BSE.</b> Aggregated query pipelines computing risk metrics and yield curves with dynamic schema normalization.</p>
+      <p><code>React 19</code> <code>TypeScript</code> <code>Node.js</code> <code>MongoDB</code> <code>Docker</code></p>
     </td>
     <td width="50%" valign="top">
-      <h3 align="center">🧠 Bare-Metal Local GPU Inference</h3>
-      <p align="center">
-        <img src="https://img.shields.io/badge/SYSTEM-BARE_METAL_GPU-2563eb?style=flat-square&logo=openai&logoColor=ffffff" alt="Bare Metal GPU" />
+      <h4>🧠 Bare-Metal Local GPU Inference</h4>
+      <p>
+        <img src="https://img.shields.io/badge/CLUSTER-BARE_METAL-2563eb?style=flat-square&logo=openai&logoColor=ffffff" alt="Bare Metal" />
       </p>
-      <p>Private GPU-accelerated local inference cluster engineered on bare-metal AMD hardware.</p>
-      <ul>
-        <li><b>High-throughput runtimes:</b> Orchestrated <code>vLLM</code> continuous batching and <code>llama.cpp</code> ROCm kernels.</li>
-        <li><b>Low TTFT streaming:</b> Engineered custom streaming API proxies for sub-second first-token latency.</li>
-        <li><b>Local isolation:</b> Docker Compose microservice mesh alongside Open WebUI.</li>
-      </ul>
-      <p><b>Stack:</b> <code>vLLM</code> <code>llama.cpp</code> <code>Docker</code> <code>ROCm</code> <code>Python</code></p>
+      <p><b>Private local AI cluster with sub-second streaming inference.</b> Continuous batching on AMD ROCm with custom FastAPI streaming proxies for minimum TTFT.</p>
+      <p><code>vLLM</code> <code>llama.cpp</code> <code>Docker</code> <code>ROCm</code> <code>Python</code></p>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3 align="center">⚡ CLI Hot-Reload Dev Engine</h3>
-      <p align="center">
+      <h4>⚡ CLI Hot-Reload Dev Engine</h4>
+      <p>
         <img src="https://img.shields.io/badge/TOOLING-INTERNAL_CORE-db2777?style=flat-square&logo=gnubash&logoColor=ffffff" alt="Internal Core" />
       </p>
-      <p>Terminal-first developer productivity engine replacing heavy UI synchronization workflows.</p>
-      <ul>
-        <li><b>Event-driven file watcher:</b> WebSocket-based incremental dispatch with Chokidar.</li>
-        <li><b>Massive team speedup:</b> Slashed local rebuild iteration cycles by &gt; 70% across 15+ engineers.</li>
-        <li><b>Streamlined CLI:</b> Intuitive flag architecture with Commander.js and TypeScript.</li>
-      </ul>
-      <p><b>Stack:</b> <code>Node.js</code> <code>Commander.js</code> <code>WebSockets</code> <code>TypeScript</code></p>
+      <p><b>Terminal-first file watcher slashing rebuild cycles by &gt; 70%.</b> WebSocket-based incremental dispatch engine replacing heavy sync bottlenecks across 15+ engineers.</p>
+      <p><code>Node.js</code> <code>WebSockets</code> <code>Commander.js</code> <code>TypeScript</code></p>
     </td>
     <td width="50%" valign="top">
-      <h3 align="center">🗄️ Universal Database Admin Suite</h3>
-      <p align="center">
+      <h4>🗄️ Universal Database Admin Suite</h4>
+      <p>
         <img src="https://img.shields.io/badge/PLATFORM-ADMIN_OPS-d97706?style=flat-square&logo=databricks&logoColor=ffffff" alt="Admin Ops" />
       </p>
-      <p>Database-agnostic operations cockpit handling complex cross-database queries and maintenance.</p>
-      <ul>
-        <li><b>Multi-engine support:</b> 50+ pre-built operations across MongoDB collections &amp; SQL tables.</li>
-        <li><b>Zero-latency inspection:</b> Virtualized 10k+ row inspections with TanStack Table.</li>
-        <li><b>Mutation safety:</b> Guarded operational transaction confirmation layers.</li>
-      </ul>
-      <p><b>Stack:</b> <code>React</code> <code>TanStack Table</code> <code>Shadcn UI</code> <code>Express</code></p>
+      <p><b>Database-agnostic operations cockpit handling 10k+ virtualized rows.</b> 50+ pre-built dynamic queries across MongoDB and SQL with mutation safety guards.</p>
+      <p><code>React</code> <code>TanStack Table</code> <code>Shadcn UI</code> <code>Express</code></p>
     </td>
   </tr>
 </table>
@@ -138,52 +114,7 @@ I am a **Backend & Distributed Systems Engineer** with **3+ years of production 
 
 ---
 
-## 🔍 Interactive Technical Deep-Dives
-
-<details>
-<summary><b>▶ [cat /etc/payment_idempotency_spec.md — Click to view Architecture Blueprint]</b></summary>
-<br />
-
-```text
-┌──────────────────────────┐       ┌──────────────────────────┐       ┌──────────────────────────┐
-│     CLIENT DISPATCH      │ ────> │  DISTRIBUTED LOCK (REDIS)│ ────> │    GO WORKER DAEMON      │
-│  Idempotency-Key Header  │       │  Atomic Lock Acquisition │       │ Deterministic State Lock │
-└──────────────────────────┘       └──────────────────────────┘       └────────────┬─────────────┘
-                                                                                   │
-                                   ┌──────────────────────────┐                    ▼
-                                   │  MUTATION AUDIT LEDGER   │ <───── [EXECUTE / GATEWAY ACK]
-                                   │  SHA-256 Webhook Log     │        Stripe & Braintree (PayPal)
-                                   └──────────────────────────┘
-```
-
-#### Key Engineering Safeguards:
-- **Zero-Collision Transactions:** Distributed Redis mutexes prevent concurrent double-charge attempts during network timeouts.
-- **Deterministic Replay Mitigation:** Keys cached with TTLs and cryptographic request fingerprints. Repeated payloads receive identical signed responses without re-executing business logic.
-- **Asynchronous Webhook Ingestion:** Go worker pools verify webhook signatures asynchronously, pushing state transitions into MongoDB with exponential backoff retries.
-
-</details>
-
-<br />
-
-<details>
-<summary><b>▶ [cat /etc/competencies_matrix.log — Click to view Full Production Breakdown]</b></summary>
-<br />
-
-| Domain | Core Competencies | Production Verification |
-| :--- | :--- | :--- |
-| **Backend & Microservices** | Go, Node.js, Express.js, WebSockets, REST APIs | Worker pool fan-outs with zero-allocation buffering |
-| **Financial Engineering** | Stripe API, Braintree SDK, Webhook Ingestion | Deterministic idempotency state machines & automated reconciliation |
-| **Database Architecture** | MongoDB Aggregations, PostgreSQL, MySQL, Redis | Dynamic schema normalization & query planner optimization |
-| **Local AI Inference** | vLLM, llama.cpp, ROCm, Docker Compose | Streaming sub-second first-token response pipelines |
-| **Developer Productivity** | TypeScript Pipelines, CLI daemons, Chokidar | 70% reduction in local rebuild iteration cycles |
-
-</details>
-
-<br />
-
----
-
-## 📬 Direct Communications & Connect
+### 📬 Direct Dispatch & Connect
 
 <div align="center">
 

@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 260" width="100%" height="100%">
+  <defs>
+    <style>
+      @keyframes pulseDot {
+        0%, 100% { opacity: 1; transform: scale(1); }
+        50% { opacity: 0.35; transform: scale(0.85); }
+      }
+      @keyframes flowLight {
+        0% { stroke-dashoffset: 24; }
+        100% { stroke-dashoffset: 0; }
+      }
+      .beacon { animation: pulseDot 2s infinite ease-in-out; }
+      .flow-line {
+        stroke-dasharray: 6 6;
+        animation: flowLight 1.2s linear infinite;
+      }
+      .mono { font-family: "SF Mono", "Consolas", "Courier New", monospace; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+
+      /* Dark Theme (Default) */
+      .bg-panel { fill: #0b101b; stroke: #1e293b; }
+      .box-bg { fill: #131b2e; stroke: #2a3b5c; }
+      .box-highlight { fill: #0d2847; stroke: #00f2fe; }
+      .text-title { fill: #f8fafc; }
+      .text-sub { fill: #94a3b8; }
+      .text-cyan { fill: #00f2fe; }
+      .text-green { fill: #10b981; }
+      .text-red { fill: #ff0844; }
+      .line-color { stroke: #00f2fe; }
+      .line-green { stroke: #10b981; }
+
+      /* Light Theme */
+      @media (prefers-color-scheme: light) {
+        .bg-panel { fill: #ffffff; stroke: #d0d7de; }
+        .box-bg { fill: #f6f8fa; stroke: #cbd5e1; }
+        .box-highlight { fill: #eff6ff; stroke: #0969da; }
+        .text-title { fill: #0f172a; }
+        .text-sub { fill: #475569; }
+        .text-cyan { fill: #0969da; }
+        .text-green { fill: #16a34a; }
+        .text-red { fill: #cf222e; }
+        .line-color { stroke: #0969da; }
+        .line-green { stroke: #16a34a; }
+      }
+    </style>
+  </defs>
+
+  <!-- Outer Card Frame -->
+  <rect x="2" y="2" width="876" height="256" rx="10" class="bg-panel" stroke-width="2" />
+
+  <!-- PIPELINE 1: FINANCIAL PAYMENT LIFECYCLE -->
+  <g transform="translate(24, 20)">
+    <!-- Header -->
+    <circle cx="6" cy="6" r="4.5" class="text-green beacon" />
+    <text x="18" y="10" class="mono text-green" font-size="11" font-weight="800">PIPELINE 01 // IDEMPOTENT FINANCIAL LIFECYCLE (GO • STRIPE • PAYPAL)</text>
+
+    <!-- Step 1: Client API -->
+    <g transform="translate(0, 24)">
+      <rect x="0" y="0" width="170" height="58" rx="6" class="box-bg" stroke-width="1.5" />
+      <text x="14" y="24" class="sans text-title" font-size="12" font-weight="700">Client Dispatch</text>
+      <text x="14" y="44" class="mono text-sub" font-size="10">Idempotency-Key: UUID</text>
+    </g>
+
+    <!-- Arrow 1 -->
+    <line x1="170" y1="53" x2="224" y2="53" class="line-color flow-line" stroke-width="2" />
+    <polygon points="224,49 232,53 224,57" class="text-cyan" />
+
+    <!-- Step 2: Distributed Lock -->
+    <g transform="translate(232, 24)">
+      <rect x="0" y="0" width="180" height="58" rx="6" class="box-bg" stroke-width="1.5" />
+      <text x="14" y="24" class="sans text-title" font-size="12" font-weight="700">Redis Mutex Lock</text>
+      <text x="14" y="44" class="mono text-cyan" font-size="10">TTL 30s • Zero-Collision</text>
+    </g>
+
+    <!-- Arrow 2 -->
+    <line x1="412" y1="53" x2="466" y2="53" class="line-color flow-line" stroke-width="2" />
+    <polygon points="466,49 474,53 466,57" class="text-cyan" />
+
+    <!-- Step 3: Go Engine -->
+    <g transform="translate(474, 24)">
+      <rect x="0" y="0" width="180" height="58" rx="6" class="box-highlight" stroke-width="2" />
+      <text x="14" y="24" class="sans text-title" font-size="12" font-weight="700">Go Payment Daemon</text>
+      <text x="14" y="44" class="mono text-cyan" font-size="10">Stripe &amp; Braintree APIs</text>
+    </g>
+
+    <!-- Arrow 3 -->
+    <line x1="654" y1="53" x2="708" y2="53" class="line-color flow-line" stroke-width="2" />
+    <polygon points="708,49 716,53 708,57" class="text-cyan" />
+
+    <!-- Step 4: Audit Ledger -->
+    <g transform="translate(716, 24)">
+      <rect x="0" y="0" width="116" height="58" rx="6" class="box-bg" stroke-width="1.5" />
+      <text x="12" y="24" class="sans text-title" font-size="12" font-weight="700">Audit Ledger</text>
+      <text x="12" y="44" class="mono text-green" font-size="10">SHA-256 Ack</text>
+    </g>
+  </g>
+
+  <!-- Divider Line -->
+  <line x1="24" y1="128" x2="856" y2="128" stroke="#1e293b" stroke-width="1" stroke-dasharray="4 4" opacity="0.6" />
+
+  <!-- PIPELINE 2: PRIVATE GPU LOCAL LLM INFERENCE -->
+  <g transform="translate(24, 146)">
+    <!-- Header -->
+    <circle cx="6" cy="6" r="4.5" class="text-cyan beacon" />
+    <text x="18" y="10" class="mono text-cyan" font-size="11" font-weight="800">PIPELINE 02 // BARE-METAL GPU LOCAL LLM CLUSTER (vLLM • ROCm • STREAMING)</text>
+
+    <!-- Step 1: User Request -->
+    <g transform="translate(0, 24)">
+      <rect x="0" y="0" width="170" height="58" rx="6" class="box-bg" stroke-width="1.5" />
+      <text x="14" y="24" class="sans text-title" font-size="12" font-weight="700">Client Chat Prompt</text>
+      <text x="14" y="44" class="mono text-sub" font-size="10">OpenAI Compatible API</text>
+    </g>
+
+    <!-- Arrow 1 -->
+    <line x1="170" y1="53" x2="224" y2="53" class="line-green flow-line" stroke-width="2" />
+    <polygon points="224,49 232,53 224,57" class="text-green" />
+
+    <!-- Step 2: Streaming Proxy -->
+    <g transform="translate(232, 24)">
+      <rect x="0" y="0" width="180" height="58" rx="6" class="box-bg" stroke-width="1.5" />
+      <text x="14" y="24" class="sans text-title" font-size="12" font-weight="700">FastAPI Async Proxy</text>
+      <text x="14" y="44" class="mono text-green" font-size="10">Token Buffer Optimizer</text>
+    </g>
+
+    <!-- Arrow 2 -->
+    <line x1="412" y1="53" x2="466" y2="53" class="line-green flow-line" stroke-width="2" />
+    <polygon points="466,49 474,53 466,57" class="text-green" />
+
+    <!-- Step 3: vLLM & AMD ROCm -->
+    <g transform="translate(474, 24)">
+      <rect x="0" y="0" width="180" height="58" rx="6" class="box-highlight" stroke-width="2" />
+      <text x="14" y="24" class="sans text-title" font-size="12" font-weight="700">vLLM Inference Engine</text>
+      <text x="14" y="44" class="mono text-cyan" font-size="10">Paged KV-Cache • Batch</text>
+    </g>
+
+    <!-- Arrow 3 -->
+    <line x1="654" y1="53" x2="708" y2="53" class="line-green flow-line" stroke-width="2" />
+    <polygon points="708,49 716,53 708,57" class="text-green" />
+
+    <!-- Step 4: AMD GPU Output -->
+    <g transform="translate(716, 24)">
+      <rect x="0" y="0" width="116" height="58" rx="6" class="box-bg" stroke-width="1.5" />
+      <text x="12" y="24" class="sans text-title" font-size="12" font-weight="700">AMD Bare-Metal</text>
+      <text x="12" y="44" class="mono text-green" font-size="10">&lt; 300ms TTFT</text>
+    </g>
+  </g>
+</svg>
