@@ -1,30 +1,31 @@
 <div align="center">
 
-  <!-- Dual-Mode Retro Developer Workstation (Automatic Dark/Light Mode) -->
+  <!-- Vintage Retro OS Workstation (Directly inspired by user uploaded images) -->
+  <!-- Automatic Dark Mode / Light Mode Switching -->
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/retro-window-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="./assets/retro-window-light.svg">
-    <img src="./assets/retro-window-dark.svg" width="100%" alt="Jaspreet Singh — Developer Workstation OS" />
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/retro-os-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/retro-os-light.svg">
+    <img src="./assets/retro-os-light.svg" width="100%" alt="JaspreetOS 7.5 — Retro Developer Workstation" />
   </picture>
 
   <br />
 
-  <!-- Quick Action Navigation -->
+  <!-- Retro High-Contrast Action Buttons -->
   <p align="center">
     <a href="https://jaspreetlabs.is-a.dev/">
-      <img src="https://img.shields.io/badge/%F0%9F%8C%90_LIVE_PORTFOLIO-jaspreetlabs.is--a.dev-090d16?style=for-the-badge&logo=googlechrome&logoColor=00f2fe" alt="Portfolio" />
+      <img src="https://img.shields.io/badge/%F0%9F%8C%90_LIVE_PORTFOLIO-jaspreetlabs.is--a.dev-1a1a1a?style=for-the-badge&logo=googlechrome&logoColor=00f2fe" alt="Portfolio" />
     </a>
     &nbsp;
     <a href="https://jaspreetlabs.is-a.dev/resume/">
-      <img src="https://img.shields.io/badge/%F0%9F%93%84_ONLINE_CV-RESUME_ATS-090d16?style=for-the-badge&logo=read-the-docs&logoColor=ff5f56" alt="Resume" />
+      <img src="https://img.shields.io/badge/%F0%9F%93%84_ONLINE_CV-RESUME_ATS-1a1a1a?style=for-the-badge&logo=read-the-docs&logoColor=ff2a4b" alt="Resume" />
     </a>
     &nbsp;
     <a href="https://www.linkedin.com/in/jaspreet-singh-71578a220/">
-      <img src="https://img.shields.io/badge/%F0%9F%92%BC_LINKEDIN-CONNECT-090d16?style=for-the-badge&logo=linkedin&logoColor=00f2fe" alt="LinkedIn" />
+      <img src="https://img.shields.io/badge/%F0%9F%92%BC_LINKEDIN-CONNECT-1a1a1a?style=for-the-badge&logo=linkedin&logoColor=00f2fe" alt="LinkedIn" />
     </a>
     &nbsp;
     <a href="mailto:jaspreet.singh.tech@gmail.com">
-      <img src="https://img.shields.io/badge/%F0%9F%93%AC_EMAIL-DIRECT_DISPATCH-090d16?style=for-the-badge&logo=gmail&logoColor=ffbd2e" alt="Email" />
+      <img src="https://img.shields.io/badge/%F0%9F%93%AC_EMAIL-DIRECT_DISPATCH-1a1a1a?style=for-the-badge&logo=gmail&logoColor=ffbd2e" alt="Email" />
     </a>
   </p>
 
@@ -122,20 +123,20 @@
 
   <p>
     <a href="https://jaspreetlabs.is-a.dev/">
-      <img src="https://img.shields.io/badge/%F0%9F%8C%90_PORTFOLIO-jaspreetlabs.is--a.dev-090d16?style=for-the-badge&logo=googlechrome&logoColor=00f2fe" alt="Portfolio" />
+      <img src="https://img.shields.io/badge/%F0%9F%8C%90_PORTFOLIO-jaspreetlabs.is--a.dev-1a1a1a?style=for-the-badge&logo=googlechrome&logoColor=00f2fe" alt="Portfolio" />
     </a>
     &nbsp;
     <a href="https://www.linkedin.com/in/jaspreet-singh-71578a220/">
-      <img src="https://img.shields.io/badge/%F0%9F%92%BC_LINKEDIN-Jaspreet_Singh-090d16?style=for-the-badge&logo=linkedin&logoColor=00f2fe" alt="LinkedIn" />
+      <img src="https://img.shields.io/badge/%F0%9F%92%BC_LINKEDIN-Jaspreet_Singh-1a1a1a?style=for-the-badge&logo=linkedin&logoColor=00f2fe" alt="LinkedIn" />
     </a>
     &nbsp;
     <a href="mailto:jaspreet.singh.tech@gmail.com">
-      <img src="https://img.shields.io/badge/%F0%9F%93%AC_EMAIL-jaspreet.singh.tech%40gmail.com-090d16?style=for-the-badge&logo=gmail&logoColor=ffbd2e" alt="Email" />
+      <img src="https://img.shields.io/badge/%F0%9F%93%AC_EMAIL-jaspreet.singh.tech%40gmail.com-1a1a1a?style=for-the-badge&logo=gmail&logoColor=ffbd2e" alt="Email" />
     </a>
   </p>
 
   <br />
 
-  <sub>&copy; 2026 Jaspreet Singh &bull; Hosted on GitHub &bull; Systems Active</sub>
+  <sub>&copy; 2026 Jaspreet Singh &bull; Hosted on GitHub &bull; JaspreetOS 7.5 Active</sub>
 
 </div>

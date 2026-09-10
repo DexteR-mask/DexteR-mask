@@ -1,0 +1,203 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" width="100%" height="100%">
+  <defs>
+    <!-- Stipple Dither Pattern for Classic Dark Scrollbar -->
+    <pattern id="stippleDark" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="2" height="2" fill="#38445d" />
+      <rect x="2" y="2" width="2" height="2" fill="#38445d" />
+    </pattern>
+
+    <!-- Pinstripe Titlebar Pattern (Dark) -->
+    <pattern id="pinstripeDark" width="10" height="2" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="1" x2="10" y2="1" stroke="#38445d" stroke-width="1" />
+    </pattern>
+
+    <style>
+      .mono { font-family: "Geneva", "Chicago", "Courier New", Courier, monospace; }
+      .sans { font-family: -apple-system, "Helvetica Neue", Arial, sans-serif; }
+    </style>
+  </defs>
+
+  <!-- Hard Deep Drop Shadow -->
+  <rect x="14" y="14" width="880" height="500" rx="6" fill="#000000" />
+
+  <!-- Main Classic OS Window Body (Dark Charcoal) -->
+  <rect x="6" y="6" width="880" height="500" rx="6" fill="#0f141f" stroke="#2a3854" stroke-width="2.5" />
+
+  <!-- 1. VINTAGE TITLE BAR (Dark Mode) -->
+  <g transform="translate(6, 6)">
+    <path d="M 0,6 A 6,6 0 0,1 6,0 L 874,0 A 6,6 0 0,1 880,6 L 880,36 L 0,36 Z" fill="#182030" />
+    <line x1="0" y1="36" x2="880" y2="36" stroke="#2a3854" stroke-width="2" />
+
+    <!-- Classic Pinstripes in titlebar -->
+    <rect x="42" y="6" width="310" height="24" fill="url(#pinstripeDark)" opacity="0.7" />
+    <rect x="528" y="6" width="310" height="24" fill="url(#pinstripeDark)" opacity="0.7" />
+
+    <!-- Classic Square Close Box (Left) with Red Accent -->
+    <rect x="12" y="10" width="16" height="16" fill="#0f141f" stroke="#ff2a4b" stroke-width="2" />
+    <rect x="16" y="14" width="8" height="8" fill="#ff2a4b" />
+
+    <!-- Window Title in Center -->
+    <rect x="360" y="6" width="160" height="24" fill="#182030" />
+    <text x="440" y="23" text-anchor="middle" class="mono" font-size="14" font-weight="900" fill="#f0f3f8">JaspreetOS 7.5</text>
+
+    <!-- Zoom Box (Right) -->
+    <rect x="850" y="10" width="16" height="16" fill="#0f141f" stroke="#2a3854" stroke-width="2" />
+    <rect x="852" y="12" width="8" height="8" fill="none" stroke="#00f2fe" stroke-width="1.5" />
+  </g>
+
+  <!-- 2. MENU / TOOLBAR STRIP -->
+  <g transform="translate(6, 42)">
+    <rect x="0" y="0" width="880" height="30" fill="#141a29" stroke="#2a3854" stroke-width="1.5" />
+    <text x="20" y="20" class="mono" font-size="11" font-weight="700" fill="#cbd5e1">📁 System</text>
+    <text x="100" y="20" class="mono" font-size="11" font-weight="700" fill="#cbd5e1">⚡ Backends</text>
+    <text x="195" y="20" class="mono" font-size="11" font-weight="700" fill="#cbd5e1">💳 Payments</text>
+    <text x="290" y="20" class="mono" font-size="11" font-weight="700" fill="#cbd5e1">🧠 Local GPU</text>
+    <text x="400" y="20" class="mono" font-size="11" font-weight="700" fill="#cbd5e1">📬 Connect</text>
+
+    <!-- Memory Meter on Right with Green Status -->
+    <rect x="710" y="6" width="156" height="18" fill="#0a0d14" stroke="#2a3854" stroke-width="1.5" />
+    <text x="718" y="19" class="mono" font-size="10" font-weight="700" fill="#10b981">RAM: 128MB [ONLINE]</text>
+  </g>
+
+  <!-- 3. SPLIT-PANE INTERIOR -->
+  <!-- LEFT SIDEBAR: CHANNEL TREE -->
+  <g transform="translate(18, 84)">
+    <rect x="0" y="0" width="250" height="376" fill="#0a0d14" stroke="#2a3854" stroke-width="1.5" />
+
+    <!-- Dropdown Selector Button -->
+    <rect x="12" y="12" width="226" height="28" fill="#182030" stroke="#2a3854" stroke-width="1.5" rx="3" />
+    <text x="24" y="30" class="mono" font-size="12" font-weight="800" fill="#f0f3f8">Jaspreet Labs</text>
+    <rect x="208" y="14" width="26" height="24" fill="#ff2a4b" />
+    <polygon points="216,23 226,23 221,29" fill="#ffffff" />
+
+    <!-- Tree Section 1: Channels -->
+    <g transform="translate(12, 58)">
+      <text x="0" y="16" class="mono" font-size="11" font-weight="900" fill="#94a3b8">▾ 📁 Channels</text>
+
+      <!-- Active Channel 1: backend-systems -->
+      <g transform="translate(12, 28)">
+        <rect x="0" y="0" width="214" height="24" fill="#1e293b" stroke="#00f2fe" stroke-width="1" rx="2" />
+        <text x="10" y="16" class="mono" font-size="11" font-weight="800" fill="#00f2fe"># 01-overview.sys</text>
+        <circle cx="198" cy="12" r="5" fill="#10b981" />
+      </g>
+
+      <!-- Channel 2 -->
+      <g transform="translate(12, 58)">
+        <text x="10" y="16" class="mono" font-size="11" font-weight="700" fill="#64748b"># 02-payment-cores</text>
+      </g>
+
+      <!-- Channel 3 -->
+      <g transform="translate(12, 86)">
+        <text x="10" y="16" class="mono" font-size="11" font-weight="700" fill="#64748b"># 03-local-gpu-ai</text>
+      </g>
+
+      <!-- Channel 4 -->
+      <g transform="translate(12, 114)">
+        <text x="10" y="16" class="mono" font-size="11" font-weight="700" fill="#64748b"># 04-dev-platforms</text>
+      </g>
+    </g>
+
+    <!-- Tree Section 2: Production Disks -->
+    <g transform="translate(12, 222)">
+      <line x1="0" y1="0" x2="226" y2="0" stroke="#2a3854" stroke-width="1" stroke-dasharray="2 2" />
+      <text x="0" y="20" class="mono" font-size="11" font-weight="900" fill="#94a3b8">▾ 💾 Featured Systems</text>
+
+      <text x="14" y="44" class="mono" font-size="10.5" font-weight="700" fill="#cbd5e1">📈 bonds-india.app</text>
+      <text x="14" y="68" class="mono" font-size="10.5" font-weight="700" fill="#cbd5e1">🧠 vllm-cluster.rocm</text>
+      <text x="14" y="92" class="mono" font-size="10.5" font-weight="700" fill="#cbd5e1">⚡ hot-reload.cli</text>
+      <text x="14" y="116" class="mono" font-size="10.5" font-weight="700" fill="#cbd5e1">🗄️ universal-db.ops</text>
+    </g>
+  </g>
+
+  <!-- 4. VINTAGE SCROLLBAR (Dark Mode) -->
+  <g transform="translate(268, 84)">
+    <rect x="0" y="0" width="18" height="376" fill="#0a0d14" stroke="#2a3854" stroke-width="1.5" />
+    
+    <rect x="0" y="0" width="18" height="18" fill="#182030" stroke="#2a3854" stroke-width="1.5" />
+    <polygon points="9,5 4,12 14,12" fill="#f0f3f8" />
+
+    <rect x="1" y="18" width="16" height="340" fill="url(#stippleDark)" opacity="0.4" />
+
+    <rect x="0" y="45" width="18" height="42" fill="#182030" stroke="#2a3854" stroke-width="1.5" />
+    <line x1="3" y1="62" x2="15" y2="62" stroke="#f0f3f8" stroke-width="1" />
+    <line x1="3" y1="66" x2="15" y2="66" stroke="#f0f3f8" stroke-width="1" />
+    <line x1="3" y1="70" x2="15" y2="70" stroke="#f0f3f8" stroke-width="1" />
+
+    <rect x="0" y="358" width="18" height="18" fill="#182030" stroke="#2a3854" stroke-width="1.5" />
+    <polygon points="9,371 4,364 14,364" fill="#f0f3f8" />
+  </g>
+
+  <!-- 5. MAIN CONTENT PANE (Dark Mode) -->
+  <g transform="translate(296, 84)">
+    <!-- Charcoal Content Box -->
+    <rect x="0" y="0" width="576" height="376" fill="#121824" stroke="#2a3854" stroke-width="1.5" />
+
+    <!-- Channel Header Bar -->
+    <rect x="0" y="0" width="576" height="36" fill="#182030" stroke="#2a3854" stroke-width="1.5" />
+    <text x="16" y="23" class="mono" font-size="12" font-weight="900" fill="#00f2fe"># 01-overview.sys</text>
+    <text x="560" y="23" text-anchor="end" class="mono" font-size="11" font-weight="700" fill="#ff2a4b">● STATUS: ACTIVE</text>
+
+    <!-- Main Message Body -->
+    <g transform="translate(20, 52)">
+      <text x="0" y="26" class="sans" font-size="28" font-weight="900" fill="#f8fafc" letter-spacing="-0.02em">
+        JASPREET SINGH
+      </text>
+
+      <text x="0" y="48" class="mono" font-size="12.5" font-weight="800" fill="#00f2fe">
+        Backend &amp; Distributed Systems Engineer
+      </text>
+
+      <text x="0" y="74" class="sans" font-size="12.5" fill="#94a3b8" line-height="1.5">
+        <tspan x="0" dy="0">Specializing in high-concurrency payment lifecycles (Go, Stripe, Braintree),</tspan>
+        <tspan x="0" dy="18">bare-metal local GPU clusters (vLLM, ROCm), and CLI developer engines.</tspan>
+      </text>
+
+      <!-- Segmented Block Progress Bars (Dark Mode with Red & Cyan) -->
+      <g transform="translate(0, 120)">
+        <text x="0" y="0" class="mono" font-size="10.5" font-weight="800" fill="#f0f3f8">GO &amp; DISTRIBUTED ARCHITECTURE</text>
+        <text x="0" y="16" class="mono" font-size="11" fill="#00f2fe" letter-spacing="0.08em">
+          ■■■■■■■■■■■■■■■■■■■■<tspan fill="#2a3854">□□□□</tspan> <tspan fill="#f0f3f8" font-weight="800">85%</tspan>
+        </text>
+
+        <text x="0" y="42" class="mono" font-size="10.5" font-weight="800" fill="#f0f3f8">FINTECH &amp; IDEMPOTENT PAYMENTS</text>
+        <text x="0" y="58" class="mono" font-size="11" fill="#ff2a4b" letter-spacing="0.08em">
+          ■■■■■■■■■■■■■■■■■■■■■■<tspan fill="#2a3854">□□</tspan> <tspan fill="#f0f3f8" font-weight="800">92%</tspan>
+        </text>
+
+        <text x="0" y="84" class="mono" font-size="10.5" font-weight="800" fill="#f0f3f8">LOCAL GPU AI (vLLM • ROCm • LLMs)</text>
+        <text x="0" y="100" class="mono" font-size="11" fill="#10b981" letter-spacing="0.08em">
+          ■■■■■■■■■■■■■■■■■■<tspan fill="#2a3854">□□□□□□</tspan> <tspan fill="#f0f3f8" font-weight="800">75%</tspan>
+        </text>
+      </g>
+
+      <!-- Industrial Stamp / Spec Badge (Dark Mode) -->
+      <g transform="translate(0, 244)">
+        <rect x="0" y="0" width="536" height="34" fill="#0a0d14" stroke="#2a3854" stroke-width="1.5" />
+        <text x="14" y="21" class="mono" font-size="10.5" font-weight="800" fill="#f0f3f8">
+          [ PROTOKOL.IO (2024-PRESENT) ] // <tspan fill="#ff2a4b">NO FOREIGN DEPENDENCIES</tspan> // STATUS: ACTIVE
+        </text>
+      </g>
+    </g>
+
+    <!-- Bottom Message Input Box -->
+    <g transform="translate(16, 334)">
+      <rect x="0" y="0" width="460" height="28" fill="#0a0d14" stroke="#2a3854" stroke-width="1.5" rx="3" />
+      <text x="12" y="18" class="mono" font-size="11" fill="#64748b">Direct dispatch to jaspreet.singh.tech@gmail.com...</text>
+
+      <!-- Send Button with Red Accent -->
+      <rect x="470" y="0" width="74" height="28" fill="#ff2a4b" stroke="#ff2a4b" stroke-width="1.5" rx="3" />
+      <text x="507" y="18" text-anchor="middle" class="mono" font-size="11" font-weight="800" fill="#ffffff">Send ⏎</text>
+    </g>
+  </g>
+
+  <!-- 6. BOTTOM STATUS BAR -->
+  <g transform="translate(6, 474)">
+    <line x1="0" y1="0" x2="880" y2="0" stroke="#2a3854" stroke-width="1.5" />
+    <text x="16" y="24" class="mono" font-size="11" font-weight="700" fill="#94a3b8">
+      READY // 4 SYSTEMS LOADED // <tspan fill="#00f2fe">18 CAPABILITIES ONLINE</tspan>
+    </text>
+    <text x="864" y="24" text-anchor="end" class="mono" font-size="11" font-weight="700" fill="#94a3b8">
+      © 2026 JASPREET SINGH
+    </text>
+  </g>
+</svg>
