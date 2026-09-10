@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="lightBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#f6f8fa" />
+    </linearGradient>
+
+    <!-- Header Gradient -->
+    <linearGradient id="headerGradLight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#eef2f6" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </linearGradient>
+
+    <style>
+      @keyframes pulseDotLight {
+        0%, 100% { opacity: 1; transform: scale(1); }
+        50% { opacity: 0.3; transform: scale(0.8); }
+      }
+      @keyframes cursorBlinkLight {
+        0%, 49% { opacity: 1; }
+        50%, 100% { opacity: 0; }
+      }
+      .pulse-online {
+        animation: pulseDotLight 2s infinite ease-in-out;
+        transform-origin: 840px 22px;
+      }
+      .cursor {
+        animation: cursorBlinkLight 1s infinite;
+        fill: #0969da;
+      }
+      .mono { font-family: "SF Mono", "Fira Code", "Courier New", monospace; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    </style>
+  </defs>
+
+  <!-- 1. Window Frame with Retro Slate Border -->
+  <rect x="2" y="2" width="896" height="316" rx="10" fill="url(#lightBg)" stroke="#d0d7de" stroke-width="2" />
+
+  <!-- 2. Window Title Bar -->
+  <path d="M 2,12 A 10,10 0 0,1 12,2 L 888,2 A 10,10 0 0,1 898,12 L 898,44 L 2,44 Z" fill="url(#headerGradLight)" />
+  <line x1="2" y1="44" x2="898" y2="44" stroke="#d0d7de" stroke-width="1.5" />
+
+  <!-- Window Controls (Red, Yellow, Green) -->
+  <circle cx="24" cy="22" r="6" fill="#ff5f56" stroke="#e0443e" stroke-width="0.5" />
+  <circle cx="44" cy="22" r="6" fill="#ffbd2e" stroke="#dea123" stroke-width="0.5" />
+  <circle cx="64" cy="22" r="6" fill="#27c93f" stroke="#1aab29" stroke-width="0.5" />
+
+  <!-- URL / Address Bar -->
+  <g transform="translate(110, 10)">
+    <rect x="0" y="0" width="670" height="25" rx="5" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" />
+    <!-- Lock Icon -->
+    <path d="M 14,13 L 14,10 A 3,3 0 0,1 20,10 L 20,13 M 12,13 L 22,13 L 22,20 L 12,20 Z" fill="none" stroke="#0969da" stroke-width="1.5" />
+    <text x="28" y="17" fill="#475569" class="mono" font-size="11">https://jaspreetlabs.is-a.dev<tspan fill="#0f172a" font-weight="600">/backend-systems/v3.4</tspan></text>
+    <!-- Status Tag -->
+    <rect x="560" y="4" width="98" height="17" rx="3" fill="#f1f5f9" stroke="#0969da" stroke-width="0.8" />
+    <circle cx="572" cy="12" r="3.5" fill="#1a7f37" />
+    <text x="582" y="15" fill="#0969da" class="mono" font-size="9" font-weight="700">SYS: ONLINE</text>
+  </g>
+
+  <!-- Live Pulse Beacon on Far Right -->
+  <circle cx="840" cy="22" r="4" fill="#cf222e" class="pulse-online" />
+  <text x="852" y="26" fill="#cf222e" class="mono" font-size="10" font-weight="700">REC</text>
+
+  <!-- 3. Navigation Tab Bar -->
+  <g transform="translate(24, 56)">
+    <!-- Tab 1 (Active) -->
+    <path d="M 0,26 L 0,6 A 6,6 0 0,1 6,0 L 134,0 A 6,6 0 0,1 140,6 L 140,26 Z" fill="#ffffff" stroke="#0969da" stroke-width="1" />
+    <rect x="0" y="0" width="140" height="2" fill="#0969da" />
+    <text x="70" y="17" text-anchor="middle" fill="#0969da" class="mono" font-size="11" font-weight="700">📁 OVERVIEW.SYS</text>
+
+    <!-- Tab 2 -->
+    <g transform="translate(148, 0)">
+      <rect x="0" y="4" width="130" height="22" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+      <text x="65" y="18" text-anchor="middle" fill="#64748b" class="mono" font-size="11">⚡ STACK.LOG</text>
+    </g>
+
+    <!-- Tab 3 -->
+    <g transform="translate(286, 0)">
+      <rect x="0" y="4" width="130" height="22" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+      <text x="65" y="18" text-anchor="middle" fill="#64748b" class="mono" font-size="11">🚀 PROJECTS.EXE</text>
+    </g>
+
+    <!-- Tab 4 -->
+    <g transform="translate(424, 0)">
+      <rect x="0" y="4" width="130" height="22" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+      <text x="65" y="18" text-anchor="middle" fill="#64748b" class="mono" font-size="11">📬 CONTACT.SH</text>
+    </g>
+
+    <line x1="0" y1="26" x2="850" y2="26" stroke="#e2e8f0" stroke-width="1.5" />
+  </g>
+
+  <!-- 4. Hero Content Section -->
+  <g transform="translate(36, 110)">
+    <!-- Terminal Prompt Header -->
+    <text x="0" y="16" fill="#0969da" class="mono" font-size="13" font-weight="700">&gt; WHOAMI --ROLE --FOCUS</text>
+
+    <!-- Big Bold Name -->
+    <text x="0" y="58" class="sans" font-size="38" font-weight="900" fill="#0f172a" letter-spacing="-0.02em">
+      JASPREET SINGH
+    </text>
+
+    <!-- Role Tagline -->
+    <text x="0" y="90" class="mono" font-size="16" font-weight="700" fill="#0969da">
+      Backend &amp; Distributed Systems Engineer
+      <tspan class="cursor">_</tspan>
+    </text>
+
+    <!-- Core Pitch / Value Proposition (Crystal Clear & Impactful) -->
+    <text x="0" y="122" class="sans" font-size="14" fill="#475569" line-height="1.5">
+      <tspan x="0" dy="0">3+ years engineering high-concurrency payment lifecycles in Go, private local LLM GPU clusters,</tspan>
+      <tspan x="0" dy="22">and developer platforms. Building deterministic microservices that fail predictably and scale effortlessly.</tspan>
+    </text>
+
+    <!-- Metric Badges Row (Retro Style) -->
+    <g transform="translate(0, 160)">
+      <!-- Badge 1 -->
+      <rect x="0" y="0" width="170" height="28" rx="5" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1" />
+      <circle cx="14" cy="14" r="3.5" fill="#2563eb" />
+      <text x="26" y="18" fill="#1d4ed8" class="mono" font-size="11" font-weight="700">EXPERIENCE: 3+ YEARS</text>
+
+      <!-- Badge 2 -->
+      <g transform="translate(182, 0)">
+        <rect x="0" y="0" width="180" height="28" rx="5" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1" />
+        <circle cx="14" cy="14" r="3.5" fill="#16a34a" />
+        <text x="26" y="18" fill="#15803d" class="mono" font-size="11" font-weight="700">CURRENT: PROTOKOL.IO</text>
+      </g>
+
+      <!-- Badge 3 -->
+      <g transform="translate(374, 0)">
+        <rect x="0" y="0" width="215" height="28" rx="5" fill="#fdf2f8" stroke="#fbcfe8" stroke-width="1" />
+        <circle cx="14" cy="14" r="3.5" fill="#db2777" />
+        <text x="26" y="18" fill="#be185d" class="mono" font-size="11" font-weight="700">SPECIALTY: GO &amp; FINTECH</text>
+      </g>
+
+      <!-- Badge 4 -->
+      <g transform="translate(601, 0)">
+        <rect x="0" y="0" width="225" height="28" rx="5" fill="#fffbeb" stroke="#fde68a" stroke-width="1" />
+        <circle cx="14" cy="14" r="3.5" fill="#d97706" />
+        <text x="26" y="18" fill="#b45309" class="mono" font-size="11" font-weight="700">AI: LOCAL GPU INFERENCE</text>
+      </g>
+    </g>
+  </g>
+</svg>
