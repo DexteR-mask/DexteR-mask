@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 110" width="100%" height="100%">
+  <defs>
+    <style>
+      @keyframes pulseBeacon {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.3; }
+      }
+      .beacon-green { animation: pulseBeacon 2s infinite ease-in-out; fill: #10b981; }
+      .beacon-cyan { animation: pulseBeacon 2s infinite ease-in-out; fill: #00f0ff; }
+      .beacon-pink { animation: pulseBeacon 2s infinite ease-in-out; fill: #ff0055; }
+      .beacon-amber { animation: pulseBeacon 2s infinite ease-in-out; fill: #f59e0b; }
+      .mono { font-family: "Fira Code", "SF Mono", "Consolas", monospace; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    </style>
+  </defs>
+
+  <!-- 4 Telemetry Metric Cards -->
+  <!-- Card 1: 99.99% Idempotency -->
+  <g transform="translate(0, 0)">
+    <rect x="0" y="0" width="202" height="106" rx="6" fill="#090d16" stroke="#1a2333" stroke-width="1.5" />
+    <rect x="0" y="0" width="202" height="3" rx="1.5" fill="#10b981" />
+    <circle cx="16" cy="22" r="3.5" class="beacon-green" />
+    <text x="26" y="26" class="mono" font-size="10" font-weight="800" fill="#10b981">FINTECH // GO</text>
+    
+    <text x="14" y="58" class="sans" font-size="24" font-weight="900" fill="#f8fafc">99.99%</text>
+    <text x="14" y="80" class="mono" font-size="10.5" fill="#94a3b8">Idempotency Core</text>
+    <text x="14" y="94" class="mono" font-size="9" fill="#64748b">Stripe &amp; Braintree APIs</text>
+  </g>
+
+  <!-- Card 2: < 300ms First-Token Latency -->
+  <g transform="translate(216, 0)">
+    <rect x="0" y="0" width="202" height="106" rx="6" fill="#090d16" stroke="#1a2333" stroke-width="1.5" />
+    <rect x="0" y="0" width="202" height="3" rx="1.5" fill="#00f0ff" />
+    <circle cx="16" cy="22" r="3.5" class="beacon-cyan" />
+    <text x="26" y="26" class="mono" font-size="10" font-weight="800" fill="#00f0ff">LOCAL GPU // AI</text>
+    
+    <text x="14" y="58" class="sans" font-size="24" font-weight="900" fill="#f8fafc">&lt; 300ms</text>
+    <text x="14" y="80" class="mono" font-size="10.5" fill="#94a3b8">Time-To-First-Token</text>
+    <text x="14" y="94" class="mono" font-size="9" fill="#64748b">vLLM • ROCm Kernels</text>
+  </g>
+
+  <!-- Card 3: 70% Rebuild Reduction -->
+  <g transform="translate(432, 0)">
+    <rect x="0" y="0" width="202" height="106" rx="6" fill="#090d16" stroke="#1a2333" stroke-width="1.5" />
+    <rect x="0" y="0" width="202" height="3" rx="1.5" fill="#ff0055" />
+    <circle cx="16" cy="22" r="3.5" class="beacon-pink" />
+    <text x="26" y="26" class="mono" font-size="10" font-weight="800" fill="#ff0055">DEV PLATFORM</text>
+    
+    <text x="14" y="58" class="sans" font-size="24" font-weight="900" fill="#f8fafc">&gt; 70%</text>
+    <text x="14" y="80" class="mono" font-size="10.5" fill="#94a3b8">Cycle Time Slashed</text>
+    <text x="14" y="94" class="mono" font-size="9" fill="#64748b">CLI Hot-Reload Daemon</text>
+  </g>
+
+  <!-- Card 4: 10k+ Rows Virtualized -->
+  <g transform="translate(648, 0)">
+    <rect x="0" y="0" width="202" height="106" rx="6" fill="#090d16" stroke="#1a2333" stroke-width="1.5" />
+    <rect x="0" y="0" width="202" height="3" rx="1.5" fill="#f59e0b" />
+    <circle cx="16" cy="22" r="3.5" class="beacon-amber" />
+    <text x="26" y="26" class="mono" font-size="10" font-weight="800" fill="#f59e0b">DATABASE OPS</text>
+    
+    <text x="14" y="58" class="sans" font-size="24" font-weight="900" fill="#f8fafc">10k+ Rows</text>
+    <text x="14" y="80" class="mono" font-size="10.5" fill="#94a3b8">Zero-Latency Tables</text>
+    <text x="14" y="94" class="mono" font-size="9" fill="#64748b">MongoDB &amp; SQL Cockpit</text>
+  </g>
+</svg>

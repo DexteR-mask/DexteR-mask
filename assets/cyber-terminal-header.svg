@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 240" width="100%" height="100%">
+  <defs>
+    <!-- Cyberpunk Gradients -->
+    <linearGradient id="cyberBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f0ff" />
+      <stop offset="50%" stop-color="#7000ff" />
+      <stop offset="100%" stop-color="#ff0055" />
+    </linearGradient>
+
+    <linearGradient id="panelBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="100%" stop-color="#05070c" />
+    </linearGradient>
+
+    <style>
+      @keyframes blinkCursor {
+        0%, 49% { opacity: 1; }
+        50%, 100% { opacity: 0; }
+      }
+      @keyframes pulseOnline {
+        0%, 100% { opacity: 1; transform: scale(1); }
+        50% { opacity: 0.35; transform: scale(0.8); }
+      }
+      .cursor-blink { animation: blinkCursor 1s infinite; fill: #00f0ff; }
+      .pulse-dot { animation: pulseOnline 2s infinite ease-in-out; transform-origin: 800px 22px; }
+      .mono { font-family: "Fira Code", "SF Mono", "Consolas", "Courier New", monospace; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    </style>
+  </defs>
+
+  <!-- Outer Cyber Panel -->
+  <rect x="2" y="2" width="846" height="236" rx="8" fill="url(#panelBg)" stroke="#1a2333" stroke-width="2" />
+  
+  <!-- Sleek Cyber Top Gradient Accent -->
+  <path d="M 2,8 A 6,6 0 0,1 8,2 L 842,2 A 6,6 0 0,1 848,8 L 848,4 L 2,4 Z" fill="url(#cyberBorder)" />
+
+  <!-- Terminal Header Bar -->
+  <line x1="2" y1="36" x2="848" y2="36" stroke="#1a2333" stroke-width="1.5" />
+  
+  <!-- Terminal Window Controls -->
+  <circle cx="20" cy="20" r="5" fill="#ff0055" />
+  <circle cx="36" cy="20" r="5" fill="#ffbd2e" />
+  <circle cx="52" cy="20" r="5" fill="#00f0ff" />
+
+  <!-- Terminal Title -->
+  <text x="80" y="24" class="mono" font-size="11" font-weight="700" fill="#64748b">
+    bash // jaspreet@node-01:~ (x86_64-linux-gnu)
+  </text>
+
+  <!-- Live Telemetry Status Beacon -->
+  <circle cx="800" cy="20" r="4.5" fill="#00f0ff" class="pulse-dot" />
+  <text x="812" y="24" class="mono" font-size="10" font-weight="800" fill="#00f0ff">ONLINE</text>
+
+  <!-- Terminal Content Area -->
+  <g transform="translate(24, 60)">
+    <!-- Command Prompt -->
+    <text x="0" y="16" class="mono" font-size="13" font-weight="700">
+      <tspan fill="#00f0ff">jaspreet@node-01</tspan><tspan fill="#64748b">:</tspan><tspan fill="#a855f7">~</tspan><tspan fill="#64748b">$</tspan>
+      <tspan fill="#f8fafc"> cat /etc/engineer.json</tspan>
+    </text>
+
+    <!-- JSON Telemetry Output -->
+    <text x="0" y="44" class="mono" font-size="12" fill="#94a3b8" line-height="1.6">
+      <tspan x="0" dy="0" fill="#64748b">{</tspan>
+      <tspan x="18" dy="19"><tspan fill="#38bdf8">"engineer"</tspan><tspan fill="#64748b">: </tspan><tspan fill="#f1f5f9">"Jaspreet Singh"</tspan><tspan fill="#64748b">, </tspan><tspan fill="#38bdf8">"role"</tspan><tspan fill="#64748b">: </tspan><tspan fill="#00f0ff">"Backend &amp; Distributed Systems"</tspan><tspan fill="#64748b">,</tspan></tspan>
+      <tspan x="18" dy="19"><tspan fill="#38bdf8">"experience"</tspan><tspan fill="#64748b">: </tspan><tspan fill="#10b981">"3+ Years Production"</tspan><tspan fill="#64748b">, </tspan><tspan fill="#38bdf8">"current"</tspan><tspan fill="#64748b">: </tspan><tspan fill="#fcd34d">"Protokol.io (Native Teams)"</tspan><tspan fill="#64748b">,</tspan></tspan>
+      <tspan x="18" dy="19"><tspan fill="#38bdf8">"focus"</tspan><tspan fill="#64748b">: [</tspan><tspan fill="#f472b6">"Go Payment Cores"</tspan><tspan fill="#64748b">, </tspan><tspan fill="#f472b6">"Local GPU AI (vLLM)"</tspan><tspan fill="#64748b">, </tspan><tspan fill="#f472b6">"Developer Engines"</tspan><tspan fill="#64748b">],</tspan></tspan>
+      <tspan x="18" dy="19"><tspan fill="#38bdf8">"status"</tspan><tspan fill="#64748b">: </tspan><tspan fill="#10b981">"AVAILABLE FOR HIGH-IMPACT BACKEND ROLES"</tspan></tspan>
+      <tspan x="0" dy="19" fill="#64748b">}</tspan>
+    </text>
+
+    <!-- Next Terminal Prompt with Blinking Cursor -->
+    <text x="0" y="156" class="mono" font-size="13" font-weight="700">
+      <tspan fill="#00f0ff">jaspreet@node-01</tspan><tspan fill="#64748b">:</tspan><tspan fill="#a855f7">~</tspan><tspan fill="#64748b">$ </tspan>
+      <tspan fill="#00f0ff" class="cursor-blink">█</tspan>
+    </text>
+  </g>
+</svg>

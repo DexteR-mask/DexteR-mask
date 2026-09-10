@@ -1,56 +1,39 @@
 <div align="center">
 
-  <!-- Interactive Retro Workstation Theme Switcher (Click to Toggle) -->
-  <p align="center">
-    <img src="https://img.shields.io/badge/%F0%9F%8E%A8_THEME_SWITCHER-CLICK_A_MODE_BELOW_TO_SWITCH-1a1a1a?style=for-the-badge&logo=appveyor&logoColor=00f2fe" alt="Theme Switcher" />
-  </p>
+  <!-- Dynamic Cyber Typing Banner -->
+  <a href="https://jaspreetlabs.is-a.dev/">
+    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=700&size=24&pause=1000&color=00F0FF&center=true&vCenter=true&width=750&height=50&lines=Hi%2C+I'm+Jaspreet+Singh;Backend+%26+Distributed+Systems+Engineer;Building+High-Concurrency+Payment+Cores;Orchestrating+Local+GPU+Inference+Clusters" alt="Typing SVG" />
+  </a>
 
-  <!-- Theme 1: Vintage Mac System 7 (Light Mode) -->
-  <details open>
-    <summary><b>☀️ [CLICK TO DISPLAY: VINTAGE MAC OS SYSTEM 7 — LIGHT THEME]</b></summary>
-    <br />
-    <img src="./assets/retro-os-light.svg" width="100%" alt="JaspreetOS 7.5 — Vintage Mac OS Light Workstation" />
-  </details>
+  <!-- Cyber Terminal Shell Header -->
+  <img src="./assets/cyber-terminal-header.svg" width="100%" alt="Jaspreet Singh — Terminal Shell" />
 
   <br />
 
-  <!-- Theme 2: Cyber Retro Obsidian (Dark Mode) -->
-  <details>
-    <summary><b>🌙 [CLICK TO DISPLAY: CYBER RETRO OBSIDIAN — DARK THEME]</b></summary>
-    <br />
-    <img src="./assets/retro-os-dark.svg" width="100%" alt="JaspreetOS 7.5 — Cyber Retro Dark Workstation" />
-  </details>
+  <!-- High-Impact Cyber Telemetry HUD -->
+  <img src="./assets/cyber-telemetry-hud.svg" width="100%" alt="System Telemetry HUD" />
 
-  <br />
+  <br /><br />
 
-  <!-- Retro High-Contrast Action Buttons -->
+  <!-- Action Badges -->
   <p align="center">
     <a href="https://jaspreetlabs.is-a.dev/">
-      <img src="https://img.shields.io/badge/%F0%9F%8C%90_LIVE_PORTFOLIO-jaspreetlabs.is--a.dev-1a1a1a?style=for-the-badge&logo=googlechrome&logoColor=00f2fe" alt="Portfolio" />
+      <img src="https://img.shields.io/badge/%F0%9F%8C%90_LIVE_PORTFOLIO-jaspreetlabs.is--a.dev-090d16?style=for-the-badge&logo=googlechrome&logoColor=00f0ff" alt="Portfolio" />
     </a>
     &nbsp;
     <a href="https://jaspreetlabs.is-a.dev/resume/">
-      <img src="https://img.shields.io/badge/%F0%9F%93%84_ONLINE_CV-RESUME_ATS-1a1a1a?style=for-the-badge&logo=read-the-docs&logoColor=ff2a4b" alt="Resume" />
+      <img src="https://img.shields.io/badge/%F0%9F%93%84_ONLINE_CV-RESUME_ATS-090d16?style=for-the-badge&logo=read-the-docs&logoColor=ff0055" alt="Resume" />
     </a>
     &nbsp;
     <a href="https://www.linkedin.com/in/jaspreet-singh-71578a220/">
-      <img src="https://img.shields.io/badge/%F0%9F%92%BC_LINKEDIN-CONNECT-1a1a1a?style=for-the-badge&logo=linkedin&logoColor=00f2fe" alt="LinkedIn" />
+      <img src="https://img.shields.io/badge/%F0%9F%92%BC_LINKEDIN-CONNECT-090d16?style=for-the-badge&logo=linkedin&logoColor=00f0ff" alt="LinkedIn" />
     </a>
     &nbsp;
     <a href="mailto:jaspreet.singh.tech@gmail.com">
-      <img src="https://img.shields.io/badge/%F0%9F%93%AC_EMAIL-DIRECT_DISPATCH-1a1a1a?style=for-the-badge&logo=gmail&logoColor=ffbd2e" alt="Email" />
+      <img src="https://img.shields.io/badge/%F0%9F%93%AC_EMAIL-DIRECT_DISPATCH-090d16?style=for-the-badge&logo=gmail&logoColor=ffbd2e" alt="Email" />
     </a>
   </p>
 
-</div>
-
-<br />
-
-### ⚡ Core Engineering Pillars
-
-<div align="center">
-  <!-- Visual 4-Pillar Infographic Dashboard -->
-  <img src="./assets/visual-pillars.svg" width="100%" alt="Core Engineering Pillars Dashboard" />
 </div>
 
 <br />
@@ -111,7 +94,7 @@
         <img src="https://img.shields.io/badge/TOOLING-INTERNAL_CORE-db2777?style=flat-square&logo=gnubash&logoColor=ffffff" alt="Internal Core" />
       </p>
       <p><b>Terminal-first file watcher slashing rebuild cycles by &gt; 70%.</b> WebSocket-based incremental dispatch engine replacing heavy sync bottlenecks across 15+ engineers.</p>
-      <p><code>Node.js</code> <code>WebSockets</code> <code>Commander.js</code> <code>TypeScript</code></p>
+      <p><code>Node.js</code> <code>Commander.js</code> <code>WebSockets</code> <code>TypeScript</code></p>
     </td>
     <td width="50%" valign="top">
       <h4>🗄️ Universal Database Admin Suite</h4>
@@ -128,6 +111,35 @@
 
 ---
 
+### 🔍 Interactive Terminal Diagnostics
+
+<details>
+<summary><b>▶ [ ./run_diagnostics.sh --show-architecture ]</b></summary>
+<br />
+
+```text
+┌──────────────────────────┐       ┌──────────────────────────┐       ┌──────────────────────────┐
+│     CLIENT DISPATCH      │ ────> │  DISTRIBUTED LOCK (REDIS)│ ────> │    GO WORKER DAEMON      │
+│  Idempotency-Key Header  │       │  Atomic Lock Acquisition │       │ Deterministic State Lock │
+└──────────────────────────┘       └──────────────────────────┘       └────────────┬─────────────┘
+                                                                                   │
+                                   ┌──────────────────────────┐                    ▼
+                                   │  MUTATION AUDIT LEDGER   │ <───── [EXECUTE / GATEWAY ACK]
+                                   │  SHA-256 Webhook Log     │        Stripe & Braintree (PayPal)
+                                   └──────────────────────────┘
+```
+
+#### Key Architecture Safeguards:
+- **Zero-Collision Transactions:** Distributed Redis mutexes prevent concurrent double-charge attempts during network timeouts.
+- **Deterministic Replay Mitigation:** Keys cached with TTLs and cryptographic request fingerprints. Repeated payloads receive identical signed responses without re-executing business logic.
+- **Asynchronous Webhook Ingestion:** Go worker pools verify webhook signatures asynchronously, pushing state transitions into MongoDB with exponential backoff retries.
+
+</details>
+
+<br />
+
+---
+
 ### 📬 Direct Dispatch & Connect
 
 <div align="center">
@@ -136,20 +148,20 @@
 
   <p>
     <a href="https://jaspreetlabs.is-a.dev/">
-      <img src="https://img.shields.io/badge/%F0%9F%8C%90_PORTFOLIO-jaspreetlabs.is--a.dev-1a1a1a?style=for-the-badge&logo=googlechrome&logoColor=00f2fe" alt="Portfolio" />
+      <img src="https://img.shields.io/badge/%F0%9F%8C%90_PORTFOLIO-jaspreetlabs.is--a.dev-090d16?style=for-the-badge&logo=googlechrome&logoColor=00f0ff" alt="Portfolio" />
     </a>
     &nbsp;
     <a href="https://www.linkedin.com/in/jaspreet-singh-71578a220/">
-      <img src="https://img.shields.io/badge/%F0%9F%92%BC_LINKEDIN-Jaspreet_Singh-1a1a1a?style=for-the-badge&logo=linkedin&logoColor=00f2fe" alt="LinkedIn" />
+      <img src="https://img.shields.io/badge/%F0%9F%92%BC_LINKEDIN-Jaspreet_Singh-090d16?style=for-the-badge&logo=linkedin&logoColor=00f0ff" alt="LinkedIn" />
     </a>
     &nbsp;
     <a href="mailto:jaspreet.singh.tech@gmail.com">
-      <img src="https://img.shields.io/badge/%F0%9F%93%AC_EMAIL-jaspreet.singh.tech%40gmail.com-1a1a1a?style=for-the-badge&logo=gmail&logoColor=ffbd2e" alt="Email" />
+      <img src="https://img.shields.io/badge/%F0%9F%93%AC_EMAIL-jaspreet.singh.tech%40gmail.com-090d16?style=for-the-badge&logo=gmail&logoColor=ffbd2e" alt="Email" />
     </a>
   </p>
 
   <br />
 
-  <sub>&copy; 2026 Jaspreet Singh &bull; Hosted on GitHub &bull; JaspreetOS 7.5 Active</sub>
+  <sub>&copy; 2026 Jaspreet Singh &bull; Hosted on GitHub &bull; Terminal Node Active</sub>
 
 </div>
