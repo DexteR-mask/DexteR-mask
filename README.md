@@ -1,23 +1,18 @@
 <div align="center">
 
-  <!-- Header Animated Greeting & Name -->
-  <h1>
-    Hey there, I'm Jaspreet <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="34px" />
-  </h1>
-
-  <!-- Dynamic Typing Subtitle Animation -->
+  <!-- 3D Ultra-Modern Developer Header Banner -->
   <a href="https://jaspreetlabs.is-a.dev/">
-    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=20&pause=1400&color=38BDF8&center=true&vCenter=true&width=620&height=44&lines=Backend+Systems+%26+Distributed+Architecture;High-Throughput+APIs+%26+Microservices;Payment+Pipelines+(Go+%E2%80%A2+Stripe+%E2%80%A2+Braintree);Local+LLM+Clusters+%26+Developer+Tooling" alt="Typing SVG" />
-  </a>
-
-  <br />
-
-  <!-- Animated Aesthetic Developer Workspace -->
-  <a href="https://jaspreetlabs.is-a.dev/">
-    <img src="https://user-images.githubusercontent.com/74038190/229223263-cf2e4b07-2615-4f87-9c38-e37600f8381a.gif" width="620" alt="Workspace Aesthetic" />
+    <img src="./assets/banner-3d.jpg" width="100%" alt="Jaspreet Singh - Distributed Systems & Backend Engineering" />
   </a>
 
   <br /><br />
+
+  <!-- Dynamic Typing Subtitle Animation -->
+  <a href="https://jaspreetlabs.is-a.dev/">
+    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=22&pause=1500&color=38BDF8&center=true&vCenter=true&width=650&height=46&lines=Backend+Systems+%26+Distributed+Architecture;High-Throughput+APIs+%26+Payment+Pipelines;Local+GPU+Inference+Clusters+(vLLM+%E2%80%A2+llama.cpp);Developer+Tooling+%26+High-Concurrency+Engines" alt="Typing SVG" />
+  </a>
+
+  <br />
 
   <!-- Premium Interactive Action Links -->
   <p align="center">
@@ -34,40 +29,54 @@
     </a>
   </p>
 
-  <!-- Animated Gradient Divider -->
-  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%" height="4px" />
-
 </div>
 
 <br />
 
 ### ⚡ About Me & What I'm Obsessed With
 
-I'm a backend and systems engineer driven by curiosity about how things work when pushed to scale. I love dissecting distributed systems, shaving milliseconds off API latencies, and turning chaotic architectural problems into resilient, deterministic services.
-
-When I'm not untangling payment webhooks or optimizing database query planners, you'll usually find me running self-hosted AI models on bare metal GPUs, crafting developer CLIs to kill repetitive workflows, or diving into protocol internals.
-
-- 🔭 **What I love building:** High-throughput backend services, resilient transaction pipelines, and developer tooling.
-- 🧠 **Current rabbit hole:** Running private local LLMs with GPU acceleration (`vLLM`, `llama.cpp`) and exploring streaming agent architectures.
-- ⚡ **Core philosophy:** Make systems fast, make failure states predictable, and automate anything you do more than twice.
-- 💬 **Ask me about:** Concurrency bugs, payment idempotency, Go microservices, WebSocket sync engines, and local hardware setups.
+<table>
+  <tr>
+    <td width="72%" valign="top">
+      <p>I'm a backend and systems engineer driven by curiosity about how software behaves under real concurrency and scale. I focus on distributed architecture, low-latency API design, and building resilient, deterministic microservices.</p>
+      <p>When I'm not untangling payment webhooks or optimizing database query planners, you'll usually find me running self-hosted AI models on bare metal GPUs, crafting developer CLIs to eliminate workflow friction, or exploring protocol internals.</p>
+      <ul>
+        <li>🔭 <b>What I build:</b> High-throughput backend services, resilient transaction pipelines, and developer tooling.</li>
+        <li>🧠 <b>Current rabbit hole:</b> Running private local LLMs with GPU acceleration (<code>vLLM</code>, <code>llama.cpp</code>) and streaming agent architectures.</li>
+        <li>⚡ <b>Core philosophy:</b> Make systems fast, make failure states predictable, and automate anything repeated more than twice.</li>
+        <li>💬 <b>Ask me about:</b> Concurrency edge cases, payment idempotency, Go microservices, and local GPU setups.</li>
+      </ul>
+    </td>
+    <td width="28%" align="center" valign="middle">
+      <img src="./assets/cube-3d.jpg" width="220px" alt="3D Server Node" style="border-radius: 12px;" />
+    </td>
+  </tr>
+</table>
 
 <br />
 
-<div align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="90%" height="3px" />
-</div>
+### 🖥️ System Environment & Runtime Specs
+
+```bash
+jaspreet@distributed-cluster:~$ neofetch --profile
+```
+```yaml
+Host: Custom GPU Node (Bare-Metal AMD ROCm Cluster)
+Kernel: Linux 6.12.8-hardened x86_64
+Architecture: Distributed Microservices • Event-Driven • Idempotent Queues
+Primary Runtimes: Go (Golang) • TypeScript • Node.js
+Data & Caching: PostgreSQL • MongoDB (Pipelines) • Redis • MySQL
+Infra & Virtualization: Docker • Docker Compose • Cloudflare Pages • Linux Daemons
+AI & Inference: vLLM • llama.cpp • Open WebUI (Local 70B Quantized Models)
+Specialization: Payment Gateways (Stripe • Braintree) • High-Throughput APIs • Dev CLIs
+Uptime: 99.99% Deterministic Execution
+```
 
 <br />
 
 ### 🛠️ Technical Arsenal
 
 <div align="center">
-
-  <!-- Floating Tech Stack Visual -->
-  <img src="https://user-images.githubusercontent.com/74038190/219923809-b86dc415-a0c2-4a38-bc88-ad6cf06395a8.gif" width="380" alt="Tech Stack Floating" />
-
-  <br /><br />
 
   <!-- Unified Dark Skill Icons Grid -->
   <a href="https://skillicons.dev">
@@ -79,7 +88,7 @@ When I'm not untangling payment webhooks or optimizing database query planners, 
 <br />
 
 <details open>
-<summary><b>🔍 Technology Breakdown & Strengths</b></summary>
+<summary><b>🔍 Core Competencies & Architecture Strengths</b></summary>
 <br />
 
 | Domain | Core Technologies |
@@ -91,12 +100,6 @@ When I'm not untangling payment webhooks or optimizing database query planners, 
 | **DevOps & Infrastructure** | Docker, Docker Compose, Linux/Unix Environments, Cloudflare Pages, Git, CI/CD |
 
 </details>
-
-<br />
-
-<div align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%" height="4px" />
-</div>
 
 <br />
 
@@ -163,24 +166,15 @@ When I'm not untangling payment webhooks or optimizing database query planners, 
 
 <br />
 
-<div align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="90%" height="3px" />
-</div>
-
-<br />
-
 ### 📬 Let's Connect
 
 <div align="center">
 
-  <!-- Matrix / Coding Vibe GIF -->
-  <img src="https://user-images.githubusercontent.com/74038190/213760718-ca064723-1c29-4b82-985c-aadc7f57c090.gif" width="220" alt="Binary Stream" />
-
-  <p>Whether you want to discuss distributed backend systems, local AI pipelines, or bounce around architectural ideas:</p>
+  <p>Whether you want to discuss distributed backend systems, local AI pipelines, or explore collaboration:</p>
 
   <p>
     <a href="https://jaspreetlabs.is-a.dev/">
-      <img src="https://img.shields.io/badge/Website-jaspreetlabs.is--a.dev-0284c7?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website" />
+      <img src="https://img.shields.io/badge/Portfolio-jaspreetlabs.is--a.dev-0284c7?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" />
     </a>
     &nbsp;
     <a href="https://www.linkedin.com/in/jaspreet-singh-71578a220/">
@@ -191,8 +185,5 @@ When I'm not untangling payment webhooks or optimizing database query planners, 
       <img src="https://img.shields.io/badge/Email-jaspreet.singh.tech%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
     </a>
   </p>
-
-  <!-- Animated Closing Line -->
-  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%" height="4px" />
 
 </div>
