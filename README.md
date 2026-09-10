@@ -5,9 +5,9 @@
     <img src="./assets/header-wave.svg" width="100%" alt="Jaspreet Singh - Distributed Systems & Backend Engineering" />
   </a>
 
-  <!-- 2. Dynamic Typing Subtitle Animation -->
+  <!-- 2. Dynamic Typing Subtitle Animation with Colors, Highlights & Emojis -->
   <a href="https://jaspreetlabs.is-a.dev/?utm_source=github&amp;utm_medium=profile_readme&amp;utm_campaign=typing_banner">
-    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=22&pause=1500&color=38BDF8&center=true&vCenter=true&width=700&height=46&lines=Backend+Systems+%26+Distributed+Architecture;High-Throughput+APIs+%26+Payment+Pipelines;Local+GPU+Inference+Clusters+(vLLM+%E2%80%A2+llama.cpp);Developer+Tooling+%26+High-Concurrency+Engines" alt="Typing SVG" />
+    <img src="./assets/typing-banner.svg" width="100%" alt="Jaspreet Singh // Distributed Systems Terminal" />
   </a>
 
   <br />
