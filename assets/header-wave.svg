@@ -1,70 +1,163 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 230" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" height="100%">
   <defs>
-    <!-- Background Gradient -->
-    <linearGradient id="waveBg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="skyBg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#07090e" />
-      <stop offset="50%" stop-color="#0d131f" />
-      <stop offset="100%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0d1322" />
+      <stop offset="100%" stop-color="#080c16" />
     </linearGradient>
 
-    <!-- Wave 1 Gradient -->
-    <linearGradient id="waveGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.35" />
-      <stop offset="50%" stop-color="#6366f1" stop-opacity="0.3" />
-      <stop offset="100%" stop-color="#a855f7" stop-opacity="0.4" />
+    <linearGradient id="wave1Grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e1b4b" stop-opacity="0.75" />
+      <stop offset="50%" stop-color="#312e81" stop-opacity="0.65" />
+      <stop offset="100%" stop-color="#1e1b4b" stop-opacity="0.75" />
     </linearGradient>
 
-    <!-- Wave 2 Gradient -->
-    <linearGradient id="waveGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.6" />
-      <stop offset="50%" stop-color="#4f46e5" stop-opacity="0.65" />
-      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0.7" />
+    <linearGradient id="wave2Grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4338ca" stop-opacity="0.7" />
+      <stop offset="50%" stop-color="#6366f1" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0.75" />
     </linearGradient>
 
-    <!-- Wave 3 Front Gradient -->
-    <linearGradient id="waveGrad3" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="wave3Grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.9" />
+      <stop offset="40%" stop-color="#0ea5e9" stop-opacity="0.85" />
+      <stop offset="70%" stop-color="#6366f1" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.95" />
+    </linearGradient>
+
+    <linearGradient id="crestGlow" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#38bdf8" />
-      <stop offset="40%" stop-color="#6366f1" />
-      <stop offset="100%" stop-color="#9333ea" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
     </linearGradient>
 
-    <!-- Text Glow Filter -->
-    <filter id="glowText" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="6" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    <filter id="subtleShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.6" />
     </filter>
+
+    <clipPath id="cardFrame">
+      <rect x="0" y="0" width="1200" height="320" rx="12" />
+    </clipPath>
+
+    <style>
+      @keyframes pulseDot {
+        0%, 100% { opacity: 1; transform: scale(1); }
+        50% { opacity: 0.35; transform: scale(0.85); }
+      }
+      @keyframes waveFlow1 {
+        0% { transform: translate3d(0, 0, 0); }
+        100% { transform: translate3d(-600px, 0, 0); }
+      }
+      @keyframes waveFlow2 {
+        0% { transform: translate3d(0, 0, 0); }
+        100% { transform: translate3d(-400px, 0, 0); }
+      }
+      @keyframes waveFlow3 {
+        0% { transform: translate3d(0, 0, 0); }
+        100% { transform: translate3d(-600px, 0, 0); }
+      }
+
+      .wave-anim-1 { animation: waveFlow1 8s linear infinite; }
+      .wave-anim-2 { animation: waveFlow2 5.5s linear infinite; }
+      .wave-anim-3 { animation: waveFlow3 3.8s linear infinite; }
+      .beacon { animation: pulseDot 2s infinite ease-in-out; transform-origin: 1114px 26px; }
+
+      .name-title {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+        font-weight: 900;
+        font-size: 52px;
+        fill: #ffffff;
+        letter-spacing: -0.02em;
+      }
+      .subtitle {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        font-size: 24px;
+        fill: #38bdf8;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+      }
+      .mono-chip {
+        font-family: "SF Mono", "Fira Code", "Cascadia Code", monospace;
+        font-size: 14.5px;
+        fill: #f1f5f9;
+        letter-spacing: 0.05em;
+        font-weight: 700;
+      }
+      .top-title {
+        font-family: "SF Mono", "Fira Code", monospace;
+        font-size: 12.5px;
+        fill: #94a3b8;
+        letter-spacing: 0.05em;
+        font-weight: 600;
+      }
+    </style>
   </defs>
 
-  <style>
-    .name-title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; font-weight: 800; font-size: 46px; fill: #ffffff; letter-spacing: -0.02em; }
-    .subtitle { font-family: "SF Mono", "Fira Code", monospace; font-size: 16px; fill: #38bdf8; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 600; }
-  </style>
+  <g clip-path="url(#cardFrame)">
+    <rect x="0" y="0" width="1200" height="320" rx="12" fill="url(#skyBg)" stroke="#1e2535" stroke-width="1.5" />
 
-  <!-- Canvas Background -->
-  <rect width="1000" height="230" fill="url(#waveBg)" />
+    <!-- Subtle background dot constellation -->
+    <g opacity="0.15" fill="#38bdf8">
+      <circle cx="120" cy="65" r="1.5" /><circle cx="240" cy="65" r="1.5" /><circle cx="360" cy="65" r="1.5" />
+      <circle cx="840" cy="65" r="1.5" /><circle cx="960" cy="65" r="1.5" /><circle cx="1080" cy="65" r="1.5" />
+      <circle cx="180" cy="95" r="1.5" /><circle cx="300" cy="95" r="1.5" />
+      <circle cx="900" cy="95" r="1.5" /><circle cx="1020" cy="95" r="1.5" />
+    </g>
 
-  <!-- Subtle Ambient Grid Dots -->
-  <g opacity="0.15" fill="#38bdf8">
-    <circle cx="100" cy="40" r="1.5" /><circle cx="200" cy="40" r="1.5" /><circle cx="300" cy="40" r="1.5" />
-    <circle cx="400" cy="40" r="1.5" /><circle cx="500" cy="40" r="1.5" /><circle cx="600" cy="40" r="1.5" />
-    <circle cx="700" cy="40" r="1.5" /><circle cx="800" cy="40" r="1.5" /><circle cx="900" cy="40" r="1.5" />
-    <circle cx="150" cy="80" r="1.5" /><circle cx="250" cy="80" r="1.5" /><circle cx="350" cy="80" r="1.5" />
-    <circle cx="450" cy="80" r="1.5" /><circle cx="550" cy="80" r="1.5" /><circle cx="650" cy="80" r="1.5" />
-    <circle cx="750" cy="80" r="1.5" /><circle cx="850" cy="80" r="1.5" />
-  </g>
+    <!-- MOVING WAVE LAYER 1 -->
+    <g class="wave-anim-1">
+      <path d="M 0,240.00 C 127.32,218.67 172.68,218.67 300.00,240.00 C 427.32,261.33 472.68,261.33 600.00,240.00 C 727.32,218.67 772.68,218.67 900.00,240.00 C 1027.32,261.33 1072.68,261.33 1200.00,240.00 C 1327.32,218.67 1372.68,218.67 1500.00,240.00 C 1627.32,261.33 1672.68,261.33 1800.00,240.00 C 1927.32,218.67 1972.68,218.67 2100.00,240.00 C 2227.32,261.33 2272.68,261.33 2400.00,240.00 L 2400.00,320.00 L 0,320.00 Z" fill="url(#wave1Grad)" />
+    </g>
 
-  <!-- Layer 1 Back Wave -->
-  <path d="M 0 140 C 250 80, 450 190, 700 130 C 850 90, 950 120, 1000 110 L 1000 230 L 0 230 Z" fill="url(#waveGrad1)" />
+    <!-- MOVING WAVE LAYER 2 -->
+    <g class="wave-anim-2">
+      <path d="M 0,254.00 C 84.88,235.33 115.12,235.33 200.00,254.00 C 284.88,272.67 315.12,272.67 400.00,254.00 C 484.88,235.33 515.12,235.33 600.00,254.00 C 684.88,272.67 715.12,272.67 800.00,254.00 C 884.88,235.33 915.12,235.33 1000.00,254.00 C 1084.88,272.67 1115.12,272.67 1200.00,254.00 C 1284.88,235.33 1315.12,235.33 1400.00,254.00 C 1484.88,272.67 1515.12,272.67 1600.00,254.00 C 1684.88,235.33 1715.12,235.33 1800.00,254.00 C 1884.88,272.67 1915.12,272.67 2000.00,254.00 C 2084.88,235.33 2115.12,235.33 2200.00,254.00 C 2284.88,272.67 2315.12,272.67 2400.00,254.00 L 2400.00,320.00 L 0,320.00 Z" fill="url(#wave2Grad)" />
+      <path d="M 0,254.00 C 84.88,235.33 115.12,235.33 200.00,254.00 C 284.88,272.67 315.12,272.67 400.00,254.00 C 484.88,235.33 515.12,235.33 600.00,254.00 C 684.88,272.67 715.12,272.67 800.00,254.00 C 884.88,235.33 915.12,235.33 1000.00,254.00 C 1084.88,272.67 1115.12,272.67 1200.00,254.00 C 1284.88,235.33 1315.12,235.33 1400.00,254.00 C 1484.88,272.67 1515.12,272.67 1600.00,254.00 C 1684.88,235.33 1715.12,235.33 1800.00,254.00 C 1884.88,272.67 1915.12,272.67 2000.00,254.00 C 2084.88,235.33 2115.12,235.33 2200.00,254.00 C 2284.88,272.67 2315.12,272.67 2400.00,254.00" fill="none" stroke="#818cf8" stroke-width="1.5" opacity="0.6" />
+    </g>
 
-  <!-- Layer 2 Middle Wave -->
-  <path d="M 0 160 C 200 120, 400 200, 650 150 C 820 110, 920 180, 1000 150 L 1000 230 L 0 230 Z" fill="url(#waveGrad2)" />
+    <!-- MOVING WAVE LAYER 3 -->
+    <g class="wave-anim-3">
+      <path d="M 0,268.00 C 127.32,250.67 172.68,250.67 300.00,268.00 C 427.32,285.33 472.68,285.33 600.00,268.00 C 727.32,250.67 772.68,250.67 900.00,268.00 C 1027.32,285.33 1072.68,285.33 1200.00,268.00 C 1327.32,250.67 1372.68,250.67 1500.00,268.00 C 1627.32,285.33 1672.68,285.33 1800.00,268.00 C 1927.32,250.67 1972.68,250.67 2100.00,268.00 C 2227.32,285.33 2272.68,285.33 2400.00,268.00 L 2400.00,320.00 L 0,320.00 Z" fill="url(#wave3Grad)" />
+      <path d="M 0,268.00 C 127.32,250.67 172.68,250.67 300.00,268.00 C 427.32,285.33 472.68,285.33 600.00,268.00 C 727.32,250.67 772.68,250.67 900.00,268.00 C 1027.32,285.33 1072.68,285.33 1200.00,268.00 C 1327.32,250.67 1372.68,250.67 1500.00,268.00 C 1627.32,285.33 1672.68,285.33 1800.00,268.00 C 1927.32,250.67 1972.68,250.67 2100.00,268.00 C 2227.32,285.33 2272.68,285.33 2400.00,268.00" fill="none" stroke="url(#crestGlow)" stroke-width="2.5" />
+    </g>
 
-  <!-- Layer 3 Front Crisp Wave -->
-  <path d="M 0 185 C 220 150, 480 215, 720 175 C 860 150, 940 180, 1000 170 L 1000 230 L 0 230 Z" fill="url(#waveGrad3)" />
+    <!-- TOP WORKSTATION BAR -->
+    <line x1="0" y1="44" x2="1200" y2="44" stroke="#171d2b" stroke-width="1" />
+    <g transform="translate(36, 17)">
+      <circle cx="6" cy="10" r="4.5" fill="#ef4444" opacity="0.85" />
+      <circle cx="24" cy="10" r="4.5" fill="#f59e0b" opacity="0.85" />
+      <circle cx="42" cy="10" r="4.5" fill="#10b981" opacity="0.85" />
+      <text x="62" y="14" class="top-title">jaspreet@workstation // ~/distributed-systems/core</text>
+    </g>
+    <g transform="translate(1030, 16)">
+      <rect x="0" y="0" width="134" height="24" rx="12" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+      <circle cx="16" cy="12" r="4" fill="#10b981" class="beacon" />
+      <text x="28" y="16.5" class="top-title" font-size="10" font-weight="800" fill="#34d399">SYS ONLINE</text>
+    </g>
 
-  <!-- Foreground Typography -->
-  <g text-anchor="middle" transform="translate(500, 78)">
-    <text x="0" y="0" class="name-title" filter="url(#glowText)">Jaspreet Singh</text>
-    <text x="0" y="34" class="subtitle">Distributed Systems • High-Throughput APIs • Local AI</text>
+    <!-- BOLD, CRISP, HIGH-CONTRAST TYPOGRAPHY -->
+    <g text-anchor="middle" transform="translate(600, 110)">
+      <text x="0" y="0" class="name-title" filter="url(#subtleShadow)">Jaspreet Singh</text>
+      <text x="0" y="40" class="subtitle" filter="url(#subtleShadow)">Distributed Systems &amp; Backend Engineering</text>
+      
+      <!-- Prominent, clear, high-contrast specialty pill chips -->
+      <g transform="translate(0, 70)">
+        <!-- Chip 1 -->
+        <g transform="translate(-410, 0)">
+          <rect x="0" y="0" width="255" height="34" rx="8" fill="#0f172a" fill-opacity="0.85" stroke="#334155" stroke-width="1.2" />
+          <text x="127.5" y="22.5" class="mono-chip">⚡ HIGH-CONCURRENCY CORES</text>
+        </g>
+        <!-- Chip 2 -->
+        <g transform="translate(-140, 0)">
+          <rect x="0" y="0" width="280" height="34" rx="8" fill="#0f172a" fill-opacity="0.85" stroke="#334155" stroke-width="1.2" />
+          <text x="140" y="22.5" class="mono-chip">🧠 BARE-METAL GPU INFERENCE</text>
+        </g>
+        <!-- Chip 3 -->
+        <g transform="translate(155, 0)">
+          <rect x="0" y="0" width="255" height="34" rx="8" fill="#0f172a" fill-opacity="0.85" stroke="#334155" stroke-width="1.2" />
+          <text x="127.5" y="22.5" class="mono-chip">🛠️ RESILIENT DEV TOOLING</text>
+        </g>
+      </g>
+    </g>
   </g>
 </svg>

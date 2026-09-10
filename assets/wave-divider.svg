@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 80" width="100%" height="100%">
+  <defs>
+    <linearGradient id="divWave1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.35" />
+      <stop offset="50%" stop-color="#6366f1" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.35" />
+    </linearGradient>
+    <linearGradient id="divWave2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.9" />
+      <stop offset="45%" stop-color="#4f46e5" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0.9" />
+    </linearGradient>
+    <linearGradient id="divCrest" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+    <clipPath id="divClip">
+      <rect x="0" y="0" width="1200" height="80" />
+    </clipPath>
+    <style>
+      @keyframes divFlow1 {
+        0% { transform: translate3d(0, 0, 0); }
+        100% { transform: translate3d(-400px, 0, 0); }
+      }
+      @keyframes divFlow2 {
+        0% { transform: translate3d(0, 0, 0); }
+        100% { transform: translate3d(-600px, 0, 0); }
+      }
+      .div-anim-1 { animation: divFlow1 6s linear infinite; }
+      .div-anim-2 { animation: divFlow2 3.8s linear infinite; }
+    </style>
+  </defs>
+
+  <g clip-path="url(#divClip)">
+    <g class="div-anim-1">
+      <path d="M 0,36.00 C 84.88,17.33 115.12,17.33 200.00,36.00 C 284.88,54.67 315.12,54.67 400.00,36.00 C 484.88,17.33 515.12,17.33 600.00,36.00 C 684.88,54.67 715.12,54.67 800.00,36.00 C 884.88,17.33 915.12,17.33 1000.00,36.00 C 1084.88,54.67 1115.12,54.67 1200.00,36.00 C 1284.88,17.33 1315.12,17.33 1400.00,36.00 C 1484.88,54.67 1515.12,54.67 1600.00,36.00 C 1684.88,17.33 1715.12,17.33 1800.00,36.00 C 1884.88,54.67 1915.12,54.67 2000.00,36.00 C 2084.88,17.33 2115.12,17.33 2200.00,36.00 C 2284.88,54.67 2315.12,54.67 2400.00,36.00 L 2400.00,80.00 L 0,80.00 Z" fill="url(#divWave1)" />
+    </g>
+    <g class="div-anim-2">
+      <path d="M 0,48.00 C 127.32,26.67 172.68,26.67 300.00,48.00 C 427.32,69.33 472.68,69.33 600.00,48.00 C 727.32,26.67 772.68,26.67 900.00,48.00 C 1027.32,69.33 1072.68,69.33 1200.00,48.00 C 1327.32,26.67 1372.68,26.67 1500.00,48.00 C 1627.32,69.33 1672.68,69.33 1800.00,48.00 C 1927.32,26.67 1972.68,26.67 2100.00,48.00 C 2227.32,69.33 2272.68,69.33 2400.00,48.00 L 2400.00,80.00 L 0,80.00 Z" fill="url(#divWave2)" />
+      <path d="M 0,48.00 C 127.32,26.67 172.68,26.67 300.00,48.00 C 427.32,69.33 472.68,69.33 600.00,48.00 C 727.32,26.67 772.68,26.67 900.00,48.00 C 1027.32,69.33 1072.68,69.33 1200.00,48.00 C 1327.32,26.67 1372.68,26.67 1500.00,48.00 C 1627.32,69.33 1672.68,69.33 1800.00,48.00 C 1927.32,26.67 1972.68,26.67 2100.00,48.00 C 2227.32,69.33 2272.68,69.33 2400.00,48.00" fill="none" stroke="url(#divCrest)" stroke-width="2.5" />
+    </g>
+  </g>
+</svg>

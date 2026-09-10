@@ -1,10 +1,45 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 90" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100" width="100%" height="100%">
   <defs>
-    <linearGradient id="footWave" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#9333ea" />
-      <stop offset="50%" stop-color="#6366f1" />
-      <stop offset="100%" stop-color="#0284c7" />
+    <linearGradient id="footWave1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e1b4b" stop-opacity="0.7" />
+      <stop offset="50%" stop-color="#312e81" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#1e1b4b" stop-opacity="0.75" />
     </linearGradient>
+    <linearGradient id="footWave2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.9" />
+      <stop offset="35%" stop-color="#6366f1" stop-opacity="0.85" />
+      <stop offset="70%" stop-color="#0ea5e9" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.95" />
+    </linearGradient>
+    <linearGradient id="footCrest" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c084fc" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+    <clipPath id="footClip">
+      <rect x="0" y="0" width="1200" height="100" />
+    </clipPath>
+    <style>
+      @keyframes footFlow1 {
+        0% { transform: translate3d(0, 0, 0); }
+        100% { transform: translate3d(-400px, 0, 0); }
+      }
+      @keyframes footFlow2 {
+        0% { transform: translate3d(0, 0, 0); }
+        100% { transform: translate3d(-600px, 0, 0); }
+      }
+      .foot-anim-1 { animation: footFlow1 6.5s linear infinite; }
+      .foot-anim-2 { animation: footFlow2 4s linear infinite; }
+    </style>
   </defs>
-  <path d="M 0 0 C 300 65, 600 10, 1000 55 L 1000 90 L 0 90 Z" fill="url(#footWave)" />
+
+  <g clip-path="url(#footClip)">
+    <g class="foot-anim-1">
+      <path d="M 0,42.00 C 84.88,20.67 115.12,20.67 200.00,42.00 C 284.88,63.33 315.12,63.33 400.00,42.00 C 484.88,20.67 515.12,20.67 600.00,42.00 C 684.88,63.33 715.12,63.33 800.00,42.00 C 884.88,20.67 915.12,20.67 1000.00,42.00 C 1084.88,63.33 1115.12,63.33 1200.00,42.00 C 1284.88,20.67 1315.12,20.67 1400.00,42.00 C 1484.88,63.33 1515.12,63.33 1600.00,42.00 C 1684.88,20.67 1715.12,20.67 1800.00,42.00 C 1884.88,63.33 1915.12,63.33 2000.00,42.00 C 2084.88,20.67 2115.12,20.67 2200.00,42.00 C 2284.88,63.33 2315.12,63.33 2400.00,42.00 L 2400.00,100.00 L 0,100.00 Z" fill="url(#footWave1)" />
+    </g>
+    <g class="foot-anim-2">
+      <path d="M 0,54.00 C 127.32,30.00 172.68,30.00 300.00,54.00 C 427.32,78.00 472.68,78.00 600.00,54.00 C 727.32,30.00 772.68,30.00 900.00,54.00 C 1027.32,78.00 1072.68,78.00 1200.00,54.00 C 1327.32,30.00 1372.68,30.00 1500.00,54.00 C 1627.32,78.00 1672.68,78.00 1800.00,54.00 C 1927.32,30.00 1972.68,30.00 2100.00,54.00 C 2227.32,78.00 2272.68,78.00 2400.00,54.00 L 2400.00,100.00 L 0,100.00 Z" fill="url(#footWave2)" />
+      <path d="M 0,54.00 C 127.32,30.00 172.68,30.00 300.00,54.00 C 427.32,78.00 472.68,78.00 600.00,54.00 C 727.32,30.00 772.68,30.00 900.00,54.00 C 1027.32,78.00 1072.68,78.00 1200.00,54.00 C 1327.32,30.00 1372.68,30.00 1500.00,54.00 C 1627.32,78.00 1672.68,78.00 1800.00,54.00 C 1927.32,30.00 1972.68,30.00 2100.00,54.00 C 2227.32,78.00 2272.68,78.00 2400.00,54.00" fill="none" stroke="url(#footCrest)" stroke-width="2.5" />
+    </g>
+  </g>
 </svg>
