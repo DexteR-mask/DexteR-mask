@@ -1,13 +1,8 @@
 <div align="center">
 
-  <!-- 1. Layered Wave Header with Prominent Title -->
+  <!-- 1. Unified Workstation Header with Integrated Dynamic Typing & Waves -->
   <a href="https://jaspreetlabs.is-a.dev/?utm_source=github&amp;utm_medium=profile_readme&amp;utm_campaign=header_wave_banner">
     <img src="./assets/header-wave.svg" width="100%" alt="Jaspreet Singh - Distributed Systems & Backend Engineering" />
-  </a>
-
-  <!-- 2. Dynamic Typing Subtitle Animation with Colors, Highlights & Emojis -->
-  <a href="https://jaspreetlabs.is-a.dev/?utm_source=github&amp;utm_medium=profile_readme&amp;utm_campaign=typing_banner">
-    <img src="./assets/typing-banner.svg" width="100%" alt="Jaspreet Singh // Distributed Systems Terminal" />
   </a>
 
   <br />
