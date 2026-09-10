@@ -1,52 +1,75 @@
 <div align="center">
 
-  <!-- Dynamic Aesthetic Header Banner -->
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0284c7,6366f1&height=200&section=header&text=Jaspreet%20Singh&fontSize=46&fontColor=ffffff&animation=fadeIn&desc=Backend%20%26%20Platform%20Engineer&descSize=20&descAlignY=68" width="100%" alt="Header Banner" />
+  <!-- Header Animated Greeting & Name -->
+  <h1>
+    Hey there, I'm Jaspreet <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="34px" />
+  </h1>
 
-  <!-- Typing Subtitle Animation -->
+  <!-- Dynamic Typing Subtitle Animation -->
   <a href="https://jaspreetlabs.is-a.dev/">
-    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=20&pause=1200&color=38BDF8&center=true&vCenter=true&width=560&height=40&lines=High-Throughput+Distributed+APIs;Payment+Gateways+(Go+%E2%80%A2+Stripe+%E2%80%A2+Braintree);Real-time+WebSockets+%26+CLI+Tooling;Cloud+Infra%2C+Docker+%26+Microservices" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=20&pause=1400&color=38BDF8&center=true&vCenter=true&width=620&height=44&lines=Backend+Systems+%26+Distributed+Architecture;High-Throughput+APIs+%26+Microservices;Payment+Pipelines+(Go+%E2%80%A2+Stripe+%E2%80%A2+Braintree);Local+LLM+Clusters+%26+Developer+Tooling" alt="Typing SVG" />
   </a>
 
   <br />
 
-  <!-- Premium Interactive Action Badges -->
+  <!-- Animated Aesthetic Developer Workspace -->
+  <a href="https://jaspreetlabs.is-a.dev/">
+    <img src="https://user-images.githubusercontent.com/74038190/229223263-cf2e4b07-2615-4f87-9c38-e37600f8381a.gif" width="620" alt="Workspace Aesthetic" />
+  </a>
+
+  <br /><br />
+
+  <!-- Premium Interactive Action Links -->
   <p align="center">
-    <a href="https://jaspreetlabs.is-a.dev/" target="_blank">
+    <a href="https://jaspreetlabs.is-a.dev/">
       <img src="https://img.shields.io/badge/Live_Portfolio-jaspreetlabs.is--a.dev-0284c7?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live Portfolio" />
     </a>
     &nbsp;
-    <a href="https://jaspreetlabs.is-a.dev/resume/" target="_blank">
+    <a href="https://jaspreetlabs.is-a.dev/resume/">
       <img src="https://img.shields.io/badge/Interactive_CV-Online_Resume-4f46e5?style=for-the-badge&logo=read-the-docs&logoColor=white" alt="Online Resume" />
     </a>
     &nbsp;
-    <a href="https://www.linkedin.com/in/jaspreet-singh-71578a220/" target="_blank">
+    <a href="https://www.linkedin.com/in/jaspreet-singh-71578a220/">
       <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
     </a>
   </p>
+
+  <!-- Animated Gradient Divider -->
+  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%" height="4px" />
 
 </div>
 
 <br />
 
-### 👨‍💻 Executive Summary
+### ⚡ About Me & What I'm Obsessed With
 
-I am a **Software Engineer** with **3+ years of experience** specializing in backend systems, high-concurrency payment lifecycles, and developer platforms. I build robust microservices that bridge complex business logic with clean, automated workflows.
+I'm a backend and systems engineer driven by curiosity about how things work when pushed to scale. I love dissecting distributed systems, shaving milliseconds off API latencies, and turning chaotic architectural problems into resilient, deterministic services.
 
-- 🏢 **Current Experience**: Backend / Full Stack Engineer at **Protokol.io (Native Teams)** (2024 – Present).
-- 💳 **Financial Systems**: Engineered end-to-end payment gateway integrations in **Go** for **Stripe** and **Braintree (PayPal)**, including automated refunds, voids, and webhook verification architectures.
-- ⚡ **Developer Platforms**: Built CLI-driven hot reload engines using Node.js & WebSockets that slashed rebuild iteration cycles across engineering teams.
-- 📦 **SDKs & Architecture**: Authored and maintained production TypeScript build pipelines supporting 8+ client micro-frontends.
+When I'm not untangling payment webhooks or optimizing database query planners, you'll usually find me running self-hosted AI models on bare metal GPUs, crafting developer CLIs to kill repetitive workflows, or diving into protocol internals.
+
+- 🔭 **What I love building:** High-throughput backend services, resilient transaction pipelines, and developer tooling.
+- 🧠 **Current rabbit hole:** Running private local LLMs with GPU acceleration (`vLLM`, `llama.cpp`) and exploring streaming agent architectures.
+- ⚡ **Core philosophy:** Make systems fast, make failure states predictable, and automate anything you do more than twice.
+- 💬 **Ask me about:** Concurrency bugs, payment idempotency, Go microservices, WebSocket sync engines, and local hardware setups.
 
 <br />
 
----
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="90%" height="3px" />
+</div>
+
+<br />
 
 ### 🛠️ Technical Arsenal
 
 <div align="center">
 
-  <!-- Skillicons Modern Unified Grid -->
+  <!-- Floating Tech Stack Visual -->
+  <img src="https://user-images.githubusercontent.com/74038190/219923809-b86dc415-a0c2-4a38-bc88-ad6cf06395a8.gif" width="380" alt="Tech Stack Floating" />
+
+  <br /><br />
+
+  <!-- Unified Dark Skill Icons Grid -->
   <a href="https://skillicons.dev">
     <img src="https://skillicons.dev/icons?i=go,nodejs,ts,js,python,cpp,react,redux,mongodb,mysql,postgres,redis,docker,aws,cloudflare,git,postman,bash&perline=9" alt="Tech Stack Grid" />
   </a>
@@ -64,23 +87,27 @@ I am a **Software Engineer** with **3+ years of experience** specializing in bac
 | **Backend & Systems** | Go (Golang), Node.js, Express.js, WebSockets, RESTful APIs, Microservices, Worker Daemons |
 | **Payment Engineering** | Stripe API, Braintree (PayPal) SDK, Idempotent Transaction Lifecycle, Webhook Reconciliations |
 | **Databases & Caching** | MongoDB (Aggregation Pipelines), MySQL, PostgreSQL, Redis |
-| **Frontend & UI** | React 19, TypeScript, TanStack Query/Table/Router, Shadcn UI, HTML5/CSS3 |
+| **Frontend & UI** | React 19, TypeScript, TanStack Query/Table/Router, Tailwind CSS, Shadcn UI |
 | **DevOps & Infrastructure** | Docker, Docker Compose, Linux/Unix Environments, Cloudflare Pages, Git, CI/CD |
 
 </details>
 
 <br />
 
----
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%" height="4px" />
+</div>
 
-### 💼 Production Engineering & Featured Systems
+<br />
+
+### 💼 Featured Systems & Passion Builds
 
 <table>
   <tr>
     <td width="50%" valign="top">
       <h3 align="center">📈 Bonds India Analytics</h3>
       <p align="center">
-        <a href="https://bondsindia-production.up.railway.app/" target="_blank">
+        <a href="https://bondsindia-production.up.railway.app/">
           <img src="https://img.shields.io/badge/Live_Demo-Online-00c853?style=flat-square&logo=render&logoColor=white" alt="Live Demo" />
         </a>
       </p>
@@ -93,11 +120,11 @@ I am a **Software Engineer** with **3+ years of experience** specializing in bac
       <p><b>Stack:</b> <code>React 19</code> <code>TypeScript</code> <code>Node.js</code> <code>MongoDB</code> <code>TanStack</code></p>
     </td>
     <td width="50%" valign="top">
-      <h3 align="center">🧠 Local LLM Inference Engine</h3>
+      <h3 align="center">🧠 Local LLM Inference Cluster</h3>
       <p align="center">
         <img src="https://img.shields.io/badge/System-Self_Hosted-6366F1?style=flat-square&logo=openai&logoColor=white" alt="System" />
       </p>
-      <p>Private GPU-accelerated local inference cluster built on AMD hardware.</p>
+      <p>Private GPU-accelerated local inference cluster built on bare metal AMD hardware.</p>
       <ul>
         <li>Configured high-throughput vLLM & llama.cpp inference pipelines.</li>
         <li>Microservices orchestration via Docker Compose and Open WebUI.</li>
@@ -108,7 +135,7 @@ I am a **Software Engineer** with **3+ years of experience** specializing in bac
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3 align="center">⚡ Hot-Reload Dev CLI</h3>
+      <h3 align="center">⚡ Hot-Reload Dev Engine</h3>
       <p align="center">
         <img src="https://img.shields.io/badge/Internal-Core_Platform-0284c7?style=flat-square&logo=gnubash&logoColor=white" alt="Internal Core" />
       </p>
@@ -136,12 +163,21 @@ I am a **Software Engineer** with **3+ years of experience** specializing in bac
 
 <br />
 
----
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="90%" height="3px" />
+</div>
 
-### 📬 Get in Touch
+<br />
+
+### 📬 Let's Connect
 
 <div align="center">
-  <p>Looking for a high-impact engineer for your platform or backend team? Let's connect:</p>
+
+  <!-- Matrix / Coding Vibe GIF -->
+  <img src="https://user-images.githubusercontent.com/74038190/213760718-ca064723-1c29-4b82-985c-aadc7f57c090.gif" width="220" alt="Binary Stream" />
+
+  <p>Whether you want to discuss distributed backend systems, local AI pipelines, or bounce around architectural ideas:</p>
+
   <p>
     <a href="https://jaspreetlabs.is-a.dev/">
       <img src="https://img.shields.io/badge/Website-jaspreetlabs.is--a.dev-0284c7?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website" />
@@ -155,6 +191,8 @@ I am a **Software Engineer** with **3+ years of experience** specializing in bac
       <img src="https://img.shields.io/badge/Email-jaspreet.singh.tech%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
     </a>
   </p>
-</div>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6366f1,0284c7&height=90&section=footer" width="100%" alt="Footer Wave" />
+  <!-- Animated Closing Line -->
+  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%" height="4px" />
+
+</div>
