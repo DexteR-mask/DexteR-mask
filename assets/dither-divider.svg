@@ -1,11 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 24" width="100%" height="24">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 32" width="100%" height="32">
   <defs>
-    <pattern id="dotDither" width="6" height="6" patternUnits="userSpaceOnUse">
-      <rect width="2" height="2" fill="#30363d" />
-      <rect x="3" y="3" width="2" height="2" fill="#30363d" />
-    </pattern>
+    <style>
+      .ink { fill: #111625; }
+      .mono { font-family: "SF Mono", "Consolas", "Courier New", monospace; letter-spacing: 0.12em; font-size: 10px; font-weight: 700; }
+    </style>
   </defs>
-  <rect x="0" y="10" width="900" height="4" fill="url(#dotDither)" />
-  <rect x="380" y="4" width="140" height="16" fill="#0d1117" stroke="#30363d" stroke-width="1" rx="2" />
-  <text x="450" y="15" text-anchor="middle" font-family="monospace" font-size="9" fill="#8b949e" letter-spacing="0.12em">&lt; DITHER // SPECS &gt;</text>
+
+  <!-- Left fine dotted rule -->
+  <line x1="0" y1="16" x2="280" y2="16" stroke="#111625" stroke-width="1.2" stroke-dasharray="2 3" opacity="0.6" />
+
+  <!-- Center Dither Matrix Block -->
+  <g transform="translate(290, 8)">
+    <!-- Small Left Solid Pill -->
+    <rect x="0" y="0" width="70" height="16" class="ink" />
+    <text x="35" y="11" text-anchor="middle" fill="#f1efe9" class="mono" font-size="8">DITHER</text>
+    
+    <!-- Dissolving Pixels -->
+    <rect x="73" y="1" width="6" height="6" class="ink" />
+    <rect x="73" y="9" width="6" height="6" class="ink" />
+    <rect x="81" y="4" width="6" height="6" class="ink" />
+    <rect x="89" y="0" width="5" height="5" class="ink" />
+    <rect x="89" y="8" width="5" height="5" class="ink" />
+    <rect x="96" y="3" width="4" height="4" class="ink" />
+    <rect x="103" y="7" width="3" height="3" class="ink" />
+
+    <!-- Text Spec Label -->
+    <text x="120" y="12" class="mono" fill="#111625">// SPEC: 2026</text>
+    
+    <!-- Symmetrical Dissolving Pixels on the other side -->
+    <rect x="210" y="7" width="3" height="3" class="ink" />
+    <rect x="217" y="3" width="4" height="4" class="ink" />
+    <rect x="224" y="0" width="5" height="5" class="ink" />
+    <rect x="224" y="8" width="5" height="5" class="ink" />
+    <rect x="231" y="4" width="6" height="6" class="ink" />
+    <rect x="239" y="1" width="6" height="6" class="ink" />
+    <rect x="239" y="9" width="6" height="6" class="ink" />
+  </g>
+
+  <!-- Right fine dotted rule -->
+  <line x1="550" y1="16" x2="800" y2="16" stroke="#111625" stroke-width="1.2" stroke-dasharray="2 3" opacity="0.6" />
 </svg>
