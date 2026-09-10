@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 370" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="100%" height="100%">
   <defs>
     <linearGradient id="skyBg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#06080e" />
-      <stop offset="50%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0b101e" />
       <stop offset="100%" stop-color="#080c18" />
     </linearGradient>
 
@@ -31,50 +31,44 @@
       <stop offset="100%" stop-color="#c084fc" />
     </linearGradient>
 
-    <linearGradient id="termBorder" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.7" />
-      <stop offset="50%" stop-color="#6366f1" stop-opacity="0.8" />
-      <stop offset="100%" stop-color="#a855f7" stop-opacity="0.7" />
-    </linearGradient>
-
     <filter id="subtleShadow" x="-10%" y="-10%" width="120%" height="120%">
       <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.6" />
     </filter>
 
     <clipPath id="cardFrame">
-      <rect x="0" y="0" width="1200" height="370" rx="12" />
+      <rect x="0" y="0" width="1200" height="340" rx="12" />
     </clipPath>
 
-    <!-- Typing Animation Clips (28s loop: 7s per phrase) -->
+    <!-- Clip rect with generous y bounds [-35, 70] -->
     <clipPath id="tc1">
-      <rect x="0" y="0" width="0" height="52">
+      <rect x="180" y="-35" width="0" height="70">
         <animate attributeName="width" dur="28s" repeatCount="indefinite"
-          values="0; 920; 920; 0; 0; 0"
-          keyTimes="0; 0.07; 0.22; 0.245; 0.25; 1" />
+          values="0; 840; 840; 0; 0; 0"
+          keyTimes="0; 0.064; 0.221; 0.243; 0.25; 1" />
       </rect>
     </clipPath>
 
     <clipPath id="tc2">
-      <rect x="0" y="0" width="0" height="52">
+      <rect x="180" y="-35" width="0" height="70">
         <animate attributeName="width" dur="28s" repeatCount="indefinite"
-          values="0; 0; 920; 920; 0; 0; 0"
-          keyTimes="0; 0.25; 0.32; 0.47; 0.495; 0.50; 1" />
+          values="0; 0; 840; 840; 0; 0; 0"
+          keyTimes="0; 0.25; 0.314; 0.471; 0.493; 0.50; 1" />
       </rect>
     </clipPath>
 
     <clipPath id="tc3">
-      <rect x="0" y="0" width="0" height="52">
+      <rect x="180" y="-35" width="0" height="70">
         <animate attributeName="width" dur="28s" repeatCount="indefinite"
-          values="0; 0; 920; 920; 0; 0; 0"
-          keyTimes="0; 0.50; 0.57; 0.72; 0.745; 0.75; 1" />
+          values="0; 0; 840; 840; 0; 0; 0"
+          keyTimes="0; 0.50; 0.564; 0.721; 0.743; 0.75; 1" />
       </rect>
     </clipPath>
 
     <clipPath id="tc4">
-      <rect x="0" y="0" width="0" height="52">
+      <rect x="180" y="-35" width="0" height="70">
         <animate attributeName="width" dur="28s" repeatCount="indefinite"
-          values="0; 0; 920; 920; 0; 0; 0"
-          keyTimes="0; 0.75; 0.82; 0.97; 0.995; 1; 1" />
+          values="0; 0; 840; 840; 0; 0; 0"
+          keyTimes="0; 0.75; 0.814; 0.971; 0.993; 1; 1" />
       </rect>
     </clipPath>
 
@@ -109,29 +103,23 @@
       .name-title {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
         font-weight: 900;
-        font-size: 48px;
+        font-size: 56px;
         fill: #ffffff;
-        letter-spacing: -0.02em;
+        letter-spacing: -0.025em;
       }
-      .subtitle {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-        font-size: 22px;
+      .role-tag {
+        font-family: "SF Mono", "Fira Code", monospace;
+        font-size: 16px;
         fill: #38bdf8;
         font-weight: 700;
-        letter-spacing: 0.02em;
+        letter-spacing: 0.16em;
       }
-      .terminal-text {
+      /* Large, bold, crystal-clear typing headline */
+      .typing-headline {
         font-family: -apple-system, BlinkMacSystemFont, 'SF Mono', 'Fira Code', 'Segoe UI Emoji', monospace;
-        font-size: 15.5px;
+        font-size: 22px;
         font-weight: 600;
         text-anchor: middle;
-      }
-      .mono-chip {
-        font-family: "SF Mono", "Fira Code", "Cascadia Code", monospace;
-        font-size: 13px;
-        fill: #e2e8f0;
-        letter-spacing: 0.04em;
-        font-weight: 700;
       }
       .top-title {
         font-family: "SF Mono", "Fira Code", monospace;
@@ -144,7 +132,7 @@
   </defs>
 
   <g clip-path="url(#cardFrame)">
-    <rect x="0" y="0" width="1200" height="370" rx="12" fill="url(#skyBg)" stroke="#1e2535" stroke-width="1.5" />
+    <rect x="0" y="0" width="1200" height="340" rx="12" fill="url(#skyBg)" stroke="#1e2535" stroke-width="1.5" />
 
     <!-- Subtle constellation dots -->
     <g opacity="0.15" fill="#38bdf8">
@@ -156,19 +144,19 @@
 
     <!-- MOVING WAVE LAYER 1 -->
     <g class="wave-anim-1">
-      <path d="M 0,288.00 C 127.32,264.00 172.68,264.00 300.00,288.00 C 427.32,312.00 472.68,312.00 600.00,288.00 C 727.32,264.00 772.68,264.00 900.00,288.00 C 1027.32,312.00 1072.68,312.00 1200.00,288.00 C 1327.32,264.00 1372.68,264.00 1500.00,288.00 C 1627.32,312.00 1672.68,312.00 1800.00,288.00 C 1927.32,264.00 1972.68,264.00 2100.00,288.00 C 2227.32,312.00 2272.68,312.00 2400.00,288.00 L 2400.00,370.00 L 0,370.00 Z" fill="url(#wave1Grad)" />
+      <path d="M 0,245.00 C 127.32,221.00 172.68,221.00 300.00,245.00 C 427.32,269.00 472.68,269.00 600.00,245.00 C 727.32,221.00 772.68,221.00 900.00,245.00 C 1027.32,269.00 1072.68,269.00 1200.00,245.00 C 1327.32,221.00 1372.68,221.00 1500.00,245.00 C 1627.32,269.00 1672.68,269.00 1800.00,245.00 C 1927.32,221.00 1972.68,221.00 2100.00,245.00 C 2227.32,269.00 2272.68,269.00 2400.00,245.00 L 2400.00,340.00 L 0,340.00 Z" fill="url(#wave1Grad)" />
     </g>
 
     <!-- MOVING WAVE LAYER 2 -->
     <g class="wave-anim-2">
-      <path d="M 0,305.00 C 84.88,285.00 115.12,285.00 200.00,305.00 C 284.88,325.00 315.12,325.00 400.00,305.00 C 484.88,285.00 515.12,285.00 600.00,305.00 C 684.88,325.00 715.12,325.00 800.00,305.00 C 884.88,285.00 915.12,285.00 1000.00,305.00 C 1084.88,325.00 1115.12,325.00 1200.00,305.00 C 1284.88,285.00 1315.12,285.00 1400.00,305.00 C 1484.88,325.00 1515.12,325.00 1600.00,305.00 C 1684.88,285.00 1715.12,285.00 1800.00,305.00 C 1884.88,325.00 1915.12,325.00 2000.00,305.00 C 2084.88,285.00 2115.12,285.00 2200.00,305.00 C 2284.88,325.00 2315.12,325.00 2400.00,305.00 L 2400.00,370.00 L 0,370.00 Z" fill="url(#wave2Grad)" />
-      <path d="M 0,305.00 C 84.88,285.00 115.12,285.00 200.00,305.00 C 284.88,325.00 315.12,325.00 400.00,305.00 C 484.88,285.00 515.12,285.00 600.00,305.00 C 684.88,325.00 715.12,325.00 800.00,305.00 C 884.88,285.00 915.12,285.00 1000.00,305.00 C 1084.88,325.00 1115.12,325.00 1200.00,305.00 C 1284.88,285.00 1315.12,285.00 1400.00,305.00 C 1484.88,325.00 1515.12,325.00 1600.00,305.00 C 1684.88,285.00 1715.12,285.00 1800.00,305.00 C 1884.88,325.00 1915.12,325.00 2000.00,305.00 C 2084.88,285.00 2115.12,285.00 2200.00,305.00 C 2284.88,325.00 2315.12,325.00 2400.00,305.00" fill="none" stroke="#818cf8" stroke-width="1.5" opacity="0.6" />
+      <path d="M 0,262.00 C 84.88,242.00 115.12,242.00 200.00,262.00 C 284.88,282.00 315.12,282.00 400.00,262.00 C 484.88,242.00 515.12,242.00 600.00,262.00 C 684.88,282.00 715.12,282.00 800.00,262.00 C 884.88,242.00 915.12,242.00 1000.00,262.00 C 1084.88,282.00 1115.12,282.00 1200.00,262.00 C 1284.88,242.00 1315.12,242.00 1400.00,262.00 C 1484.88,282.00 1515.12,282.00 1600.00,262.00 C 1684.88,242.00 1715.12,242.00 1800.00,262.00 C 1884.88,282.00 1915.12,282.00 2000.00,262.00 C 2084.88,242.00 2115.12,242.00 2200.00,262.00 C 2284.88,282.00 2315.12,282.00 2400.00,262.00 L 2400.00,340.00 L 0,340.00 Z" fill="url(#wave2Grad)" />
+      <path d="M 0,262.00 C 84.88,242.00 115.12,242.00 200.00,262.00 C 284.88,282.00 315.12,282.00 400.00,262.00 C 484.88,242.00 515.12,242.00 600.00,262.00 C 684.88,282.00 715.12,282.00 800.00,262.00 C 884.88,242.00 915.12,242.00 1000.00,262.00 C 1084.88,282.00 1115.12,282.00 1200.00,262.00 C 1284.88,242.00 1315.12,242.00 1400.00,262.00 C 1484.88,282.00 1515.12,282.00 1600.00,262.00 C 1684.88,242.00 1715.12,242.00 1800.00,262.00 C 1884.88,282.00 1915.12,282.00 2000.00,262.00 C 2084.88,242.00 2115.12,242.00 2200.00,262.00 C 2284.88,282.00 2315.12,282.00 2400.00,262.00" fill="none" stroke="#818cf8" stroke-width="1.5" opacity="0.6" />
     </g>
 
     <!-- MOVING WAVE LAYER 3 -->
     <g class="wave-anim-3">
-      <path d="M 0,320.00 C 127.32,301.33 172.68,301.33 300.00,320.00 C 427.32,338.67 472.68,338.67 600.00,320.00 C 727.32,301.33 772.68,301.33 900.00,320.00 C 1027.32,338.67 1072.68,338.67 1200.00,320.00 C 1327.32,301.33 1372.68,301.33 1500.00,320.00 C 1627.32,338.67 1672.68,338.67 1800.00,320.00 C 1927.32,301.33 1972.68,301.33 2100.00,320.00 C 2227.32,338.67 2272.68,338.67 2400.00,320.00 L 2400.00,370.00 L 0,370.00 Z" fill="url(#wave3Grad)" />
-      <path d="M 0,320.00 C 127.32,301.33 172.68,301.33 300.00,320.00 C 427.32,338.67 472.68,338.67 600.00,320.00 C 727.32,301.33 772.68,301.33 900.00,320.00 C 1027.32,338.67 1072.68,338.67 1200.00,320.00 C 1327.32,301.33 1372.68,301.33 1500.00,320.00 C 1627.32,338.67 1672.68,338.67 1800.00,320.00 C 1927.32,301.33 1972.68,301.33 2100.00,320.00 C 2227.32,338.67 2272.68,338.67 2400.00,320.00" fill="none" stroke="url(#crestGlow)" stroke-width="2.5" />
+      <path d="M 0,278.00 C 127.32,259.33 172.68,259.33 300.00,278.00 C 427.32,296.67 472.68,296.67 600.00,278.00 C 727.32,259.33 772.68,259.33 900.00,278.00 C 1027.32,296.67 1072.68,296.67 1200.00,278.00 C 1327.32,259.33 1372.68,259.33 1500.00,278.00 C 1627.32,296.67 1672.68,296.67 1800.00,278.00 C 1927.32,259.33 1972.68,259.33 2100.00,278.00 C 2227.32,296.67 2272.68,296.67 2400.00,278.00 L 2400.00,340.00 L 0,340.00 Z" fill="url(#wave3Grad)" />
+      <path d="M 0,278.00 C 127.32,259.33 172.68,259.33 300.00,278.00 C 427.32,296.67 472.68,296.67 600.00,278.00 C 727.32,259.33 772.68,259.33 900.00,278.00 C 1027.32,296.67 1072.68,296.67 1200.00,278.00 C 1327.32,259.33 1372.68,259.33 1500.00,278.00 C 1627.32,296.67 1672.68,296.67 1800.00,278.00 C 1927.32,259.33 1972.68,259.33 2100.00,278.00 C 2227.32,296.67 2272.68,296.67 2400.00,278.00" fill="none" stroke="url(#crestGlow)" stroke-width="2.5" />
     </g>
 
     <!-- TOP WORKSTATION BAR -->
@@ -185,95 +173,58 @@
       <text x="28" y="16.5" class="top-title" font-size="10" font-weight="800" fill="#34d399">SYS ONLINE</text>
     </g>
 
-    <!-- CENTERED IDENTITY HEADLINE -->
-    <g text-anchor="middle" transform="translate(600, 96)">
+    <!-- PROMINENT IDENTITY HEADLINE -->
+    <g text-anchor="middle" transform="translate(600, 114)">
       <text x="0" y="0" class="name-title" filter="url(#subtleShadow)">Jaspreet Singh</text>
-      <text x="0" y="36" class="subtitle" filter="url(#subtleShadow)">Distributed Systems &amp; Backend Engineering</text>
+      <text x="0" y="38" class="role-tag" filter="url(#subtleShadow)">DISTRIBUTED SYSTEMS &amp; BACKEND ENGINEERING</text>
     </g>
 
-    <!-- INTEGRATED CENTERED DYNAMIC TYPING TERMINAL WINDOW -->
-    <g transform="translate(150, 154)">
-      <rect x="0" y="0" width="900" height="52" rx="10" fill="#070a14" stroke="url(#termBorder)" stroke-width="1.4" />
-
-      <!-- Left terminal indicator -->
-      <g transform="translate(20, 26)">
-        <circle cx="0" cy="0" r="4" fill="#10b981" />
-        <text class="mono-chip" x="10" y="4" fill="#38bdf8" font-size="13">&gt;</text>
-      </g>
-
+    <!-- CLEAN, UNCONSTRAINED DYNAMIC TYPING HEADLINE (NO ODD INNER BOX) -->
+    <g transform="translate(0, 194)">
       <!-- Line 1: Welcome & Identity -->
       <g clip-path="url(#tc1)">
-        <text class="terminal-text" x="450" y="32">
+        <text class="typing-headline" x="600" y="0">
           <tspan fill="#fbbf24">👋 Welcome!</tspan>
-          <tspan fill="#f8fafc"> I'm </tspan>
-          <tspan fill="#38bdf8" font-weight="800">Jaspreet Singh</tspan>
-          <tspan fill="#64748b"> // </tspan>
-          <tspan fill="#c084fc">Distributed Systems</tspan>
+          <tspan fill="#f8fafc"> I build </tspan>
+          <tspan fill="#38bdf8" font-weight="800">high-throughput backend systems</tspan>
           <tspan fill="#f8fafc"> &amp; </tspan>
-          <tspan fill="#38bdf8">Backend Engineer</tspan>
+          <tspan fill="#c084fc">bare-metal AI clusters</tspan>
           <tspan class="cur"> █</tspan>
         </text>
       </g>
 
       <!-- Line 2: Concurrency & Payments -->
       <g clip-path="url(#tc2)">
-        <text class="terminal-text" x="450" y="32">
-          <tspan fill="#f59e0b">⚡ Focus:</tspan>
-          <tspan fill="#f8fafc"> High-Throughput </tspan>
+        <text class="typing-headline" x="600" y="0">
+          <tspan fill="#f59e0b">⚡ Core Focus:</tspan>
+          <tspan fill="#f8fafc"> High-Concurrency </tspan>
           <tspan fill="#38bdf8">Worker Pools</tspan>
           <tspan fill="#94a3b8"> &amp; </tspan>
           <tspan fill="#34d399">Idempotent Payment Webhooks</tspan>
-          <tspan fill="#64748b"> (Stripe • Braintree)</tspan>
           <tspan class="cur"> █</tspan>
         </text>
       </g>
 
       <!-- Line 3: Bare Metal GPU AI -->
       <g clip-path="url(#tc3)">
-        <text class="terminal-text" x="450" y="32">
-          <tspan fill="#ec4899">🧠 Cluster:</tspan>
-          <tspan fill="#f8fafc"> Bare-Metal </tspan>
-          <tspan fill="#c084fc">GPU Streaming Inference</tspan>
-          <tspan fill="#64748b"> with </tspan>
-          <tspan fill="#38bdf8">vLLM</tspan>
-          <tspan fill="#94a3b8"> • </tspan>
-          <tspan fill="#818cf8">llama.cpp</tspan>
-          <tspan fill="#94a3b8"> • </tspan>
-          <tspan fill="#34d399">ROCm</tspan>
+        <text class="typing-headline" x="600" y="0">
+          <tspan fill="#ec4899">🧠 Bare-Metal AI:</tspan>
+          <tspan fill="#f8fafc"> Private GPU Streaming Inference </tspan>
+          <tspan fill="#38bdf8">(vLLM • llama.cpp • ROCm)</tspan>
           <tspan class="cur"> █</tspan>
         </text>
       </g>
 
       <!-- Line 4: Developer Tooling & Microservices -->
       <g clip-path="url(#tc4)">
-        <text class="terminal-text" x="450" y="32">
+        <text class="typing-headline" x="600" y="0">
           <tspan fill="#10b981">🚀 Shipping:</tspan>
-          <tspan fill="#f8fafc"> Low-Latency Microservices in </tspan>
+          <tspan fill="#f8fafc"> Deterministic Microservices in </tspan>
           <tspan fill="#00add8" font-weight="800">Go</tspan>
           <tspan fill="#94a3b8"> &amp; </tspan>
           <tspan fill="#3178c6" font-weight="800">TypeScript</tspan>
-          <tspan fill="#64748b"> // 99.99% Execution</tspan>
           <tspan class="cur"> █</tspan>
         </text>
-      </g>
-    </g>
-
-    <!-- CORE SPECIALTY CHIPS -->
-    <g transform="translate(600, 224)">
-      <!-- Chip 1 -->
-      <g transform="translate(-370, 0)">
-        <rect x="0" y="0" width="230" height="30" rx="6" fill="#0f172a" fill-opacity="0.85" stroke="#334155" stroke-width="1.2" />
-        <text x="115" y="20" class="mono-chip" text-anchor="middle">⚡ HIGH-CONCURRENCY CORES</text>
-      </g>
-      <!-- Chip 2 -->
-      <g transform="translate(-125, 0)">
-        <rect x="0" y="0" width="250" height="30" rx="6" fill="#0f172a" fill-opacity="0.85" stroke="#334155" stroke-width="1.2" />
-        <text x="125" y="20" class="mono-chip" text-anchor="middle">🧠 BARE-METAL GPU INFERENCE</text>
-      </g>
-      <!-- Chip 3 -->
-      <g transform="translate(140, 0)">
-        <rect x="0" y="0" width="230" height="30" rx="6" fill="#0f172a" fill-opacity="0.85" stroke="#334155" stroke-width="1.2" />
-        <text x="115" y="20" class="mono-chip" text-anchor="middle">🛠️ RESILIENT DEV TOOLING</text>
       </g>
     </g>
   </g>
