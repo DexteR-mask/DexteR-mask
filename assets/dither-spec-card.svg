@@ -1,0 +1,197 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="100%" height="100%">
+  <defs>
+    <!-- Paper Grain Texture -->
+    <pattern id="cardGrain" width="90" height="90" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="18" r="0.75" class="grain-dot" opacity="0.14" />
+      <circle cx="34" cy="42" r="0.6" class="grain-dot" opacity="0.10" />
+      <circle cx="62" cy="22" r="0.85" class="grain-dot" opacity="0.15" />
+      <circle cx="78" cy="65" r="0.7" class="grain-dot" opacity="0.12" />
+      <circle cx="24" cy="78" r="0.8" class="grain-dot" opacity="0.13" />
+      <circle cx="50" cy="85" r="0.65" class="grain-dot" opacity="0.11" />
+    </pattern>
+
+    <style>
+      /* CSS Keyframes */
+      @keyframes redPulse {
+        0%, 100% { opacity: 1; transform: scale(1); }
+        50% { opacity: 0.35; transform: scale(0.85); }
+      }
+      .beacon {
+        animation: redPulse 2s infinite ease-in-out;
+      }
+
+      /* Fonts */
+      .mono { font-family: "SF Mono", "Consolas", "Courier New", monospace; letter-spacing: 0.04em; }
+      .grotesk-bold { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-weight: 800; text-transform: uppercase; }
+
+      /* Light Mode Palette */
+      .card-bg { fill: #f1efe9; }
+      .grain-dot { fill: #111625; }
+      .ink-fill { fill: #111625; }
+      .ink-stroke { stroke: #111625; }
+      .card-border { stroke: #111625; }
+      .sub-border { stroke: #111625; }
+      .inverted-text { fill: #f1efe9; }
+      .muted-txt { fill: #484f5e; }
+      .red-txt { fill: #ef233c; }
+      .red-stroke { stroke: #ef233c; }
+
+      /* Dark Mode Palette with Red Accents */
+      @media (prefers-color-scheme: dark) {
+        .card-bg { fill: #0a0d14; }
+        .grain-dot { fill: #f0f3f8; }
+        .ink-fill { fill: #f0f3f8; }
+        .ink-stroke { stroke: #f0f3f8; }
+        .card-border { stroke: #262d3d; }
+        .sub-border { stroke: #1e2433; }
+        .inverted-text { fill: #0a0d14; }
+        .muted-txt { fill: #9da7b7; }
+        .red-txt { fill: #ff2a4b; }
+        .red-stroke { stroke: #ff2a4b; }
+      }
+    </style>
+  </defs>
+
+  <!-- 1. Background Canvas & Grain -->
+  <rect width="800" height="520" class="card-bg" rx="4" />
+  <rect width="800" height="520" fill="url(#cardGrain)" rx="4" />
+
+  <!-- Outer Structural Border with Pixel Corners -->
+  <rect x="12" y="12" width="776" height="496" fill="none" class="card-border" stroke-width="2" />
+  
+  <!-- Pixel Corner Notches -->
+  <g class="ink-fill">
+    <rect x="8" y="8" width="8" height="8" />
+    <rect x="784" y="8" width="8" height="8" />
+    <rect x="8" y="504" width="8" height="8" />
+    <rect x="784" y="504" width="8" height="8" />
+  </g>
+
+  <!-- 2. Header Strip -->
+  <g transform="translate(12, 12)">
+    <!-- Segment 1: Spec Number -->
+    <rect x="0" y="0" width="130" height="42" fill="none" class="card-border" stroke-width="2" />
+    <circle cx="22" cy="21" r="4" class="red-txt beacon" />
+    <text x="34" y="25" class="mono red-txt" font-size="12" font-weight="800">//SPEC:01</text>
+
+    <!-- Segment 2: Inverted Header Bar -->
+    <rect x="130" y="0" width="460" height="42" class="ink-fill" />
+    <text x="360" y="26" text-anchor="middle" class="inverted-text grotesk-bold" font-size="13" letter-spacing="0.12em">SYSTEMS ARCHITECTURE &amp; TELEMETRY</text>
+
+    <!-- Segment 3: Status Tag -->
+    <rect x="590" y="0" width="186" height="42" fill="none" class="card-border" stroke-width="2" />
+    <text x="683" y="26" text-anchor="middle" class="mono ink-fill" font-size="11.5" font-weight="700">STATUS: ACTIVE</text>
+  </g>
+
+  <!-- Horizontal Grid Divider -->
+  <line x1="12" y1="272" x2="788" y2="272" class="sub-border" stroke-width="1.5" stroke-dasharray="3 3" opacity="0.65" />
+  <!-- Vertical Grid Divider -->
+  <line x1="400" y1="54" x2="400" y2="466" class="sub-border" stroke-width="1.5" stroke-dasharray="3 3" opacity="0.65" />
+
+  <!-- 3. QUADRANT 1: FINANCIAL CORES & IDEMPOTENCY (Top-Left) -->
+  <g transform="translate(34, 76)">
+    <!-- Micro Pixel Art Icon: Credit Card / Ledger Block -->
+    <g class="ink-fill">
+      <rect x="0" y="0" width="24" height="16" />
+      <rect x="3" y="3" width="18" height="3" class="card-bg" />
+      <rect x="3" y="9" width="4" height="4" class="red-txt" />
+      <rect x="9" y="10" width="10" height="2" class="card-bg" />
+    </g>
+
+    <text x="32" y="13" class="grotesk-bold ink-fill" font-size="12.5" letter-spacing="0.06em">01. IDEMPOTENT PAYMENTS</text>
+    <rect x="32" y="22" width="76" height="15" class="ink-fill" />
+    <text x="70" y="33" text-anchor="middle" class="inverted-text mono" font-size="8.5" font-weight="800">GO // STRIPE</text>
+
+    <text x="0" y="58" class="mono muted-txt" font-size="10.5" font-weight="600">
+      <tspan x="0" dy="0">• Engineered Go payment gateway integrations</tspan>
+      <tspan x="0" dy="16">  for Stripe &amp; Braintree (PayPal).</tspan>
+      <tspan x="0" dy="16">• Deterministic state machine with distributed</tspan>
+      <tspan x="0" dy="16">  idempotency keys, voids, and automated refunds.</tspan>
+      <tspan x="0" dy="16">• Cryptographic webhook signature verification.</tspan>
+    </text>
+  </g>
+
+  <!-- 4. QUADRANT 2: DISTRIBUTED GO SYSTEMS (Top-Right) -->
+  <g transform="translate(422, 76)">
+    <!-- Micro Pixel Art Icon: Distributed Node Network -->
+    <g class="ink-fill">
+      <rect x="0" y="5" width="6" height="6" />
+      <rect x="18" y="0" width="6" height="6" />
+      <rect x="18" y="10" width="6" height="6" />
+      <line x1="6" y1="8" x2="18" y2="3" class="red-stroke" stroke-width="1.5" />
+      <line x1="6" y1="8" x2="18" y2="13" class="red-stroke" stroke-width="1.5" />
+    </g>
+
+    <text x="32" y="13" class="grotesk-bold ink-fill" font-size="12.5" letter-spacing="0.06em">02. DISTRIBUTED PLATFORMS</text>
+    <rect x="32" y="22" width="84" height="15" class="ink-fill" />
+    <text x="74" y="33" text-anchor="middle" class="inverted-text mono" font-size="8.5" font-weight="800">LOW-LATENCY</text>
+
+    <text x="0" y="58" class="mono muted-txt" font-size="10.5" font-weight="600">
+      <tspan x="0" dy="0">• High-concurrency microservices architected</tspan>
+      <tspan x="0" dy="16">  with worker pools and zero-allocation buffers.</tspan>
+      <tspan x="0" dy="16">• Graceful context cancellations and deterministic</tspan>
+      <tspan x="0" dy="16">  timeouts under volatile transaction volume.</tspan>
+      <tspan x="0" dy="16">• Microservices failover and circuit breaker routing.</tspan>
+    </text>
+  </g>
+
+  <!-- 5. QUADRANT 3: LOCAL GPU INFERENCE (Bottom-Left) -->
+  <g transform="translate(34, 292)">
+    <!-- Micro Pixel Art Icon: Microchip / Tensor Core -->
+    <g class="ink-fill">
+      <rect x="3" y="3" width="16" height="16" />
+      <rect x="7" y="7" width="8" height="8" class="red-txt" />
+      <!-- Chip pins -->
+      <rect x="0" y="6" width="2" height="2" /><rect x="0" y="14" width="2" height="2" />
+      <rect x="20" y="6" width="2" height="2" /><rect x="20" y="14" width="2" height="2" />
+      <rect x="6" y="0" width="2" height="2" /><rect x="14" y="0" width="2" height="2" />
+      <rect x="6" y="20" width="2" height="2" /><rect x="14" y="20" width="2" height="2" />
+    </g>
+
+    <text x="32" y="13" class="grotesk-bold ink-fill" font-size="12.5" letter-spacing="0.06em">03. LOCAL GPU INFERENCE</text>
+    <rect x="32" y="22" width="88" height="15" class="ink-fill" />
+    <text x="76" y="33" text-anchor="middle" class="inverted-text mono" font-size="8.5" font-weight="800">vLLM • ROCm</text>
+
+    <text x="0" y="58" class="mono muted-txt" font-size="10.5" font-weight="600">
+      <tspan x="0" dy="0">• Private bare-metal GPU clusters orchestrated</tspan>
+      <tspan x="0" dy="16">  for streaming local LLM inference.</tspan>
+      <tspan x="0" dy="16">• Continuous batching and optimized ROCm kernels</tspan>
+      <tspan x="0" dy="16">  via vLLM and llama.cpp runtimes.</tspan>
+      <tspan x="0" dy="16">• Custom proxies for sub-second first-token latency.</tspan>
+    </text>
+  </g>
+
+  <!-- 6. QUADRANT 4: TERMINAL DEVELOPER ENGINES (Bottom-Right) -->
+  <g transform="translate(422, 292)">
+    <!-- Micro Pixel Art Icon: Terminal Prompt -->
+    <g class="ink-fill">
+      <rect x="0" y="0" width="22" height="18" fill="none" class="ink-stroke" stroke-width="1.5" />
+      <text x="3" y="12" class="mono red-txt" font-size="9" font-weight="900">&gt;_</text>
+    </g>
+
+    <text x="32" y="13" class="grotesk-bold ink-fill" font-size="12.5" letter-spacing="0.06em">04. DEVELOPER ENGINES</text>
+    <rect x="32" y="22" width="82" height="15" class="ink-fill" />
+    <text x="73" y="33" text-anchor="middle" class="inverted-text mono" font-size="8.5" font-weight="800">CLI PLATFORM</text>
+
+    <text x="0" y="58" class="mono muted-txt" font-size="10.5" font-weight="600">
+      <tspan x="0" dy="0">• CLI-driven file system event engines slashing</tspan>
+      <tspan x="0" dy="16">  rebuild cycles across 15+ engineering peers.</tspan>
+      <tspan x="0" dy="16">• Authored robust TypeScript build pipelines</tspan>
+      <tspan x="0" dy="16">  supporting 8+ client micro-frontends.</tspan>
+      <tspan x="0" dy="16">• Slashed local iteration cycle overhead by &gt; 70%.</tspan>
+    </text>
+  </g>
+
+  <!-- 7. Footer Stamp Bar -->
+  <g transform="translate(12, 470)">
+    <line x1="0" y1="0" x2="776" y2="0" class="sub-border" stroke-width="1.5" />
+    
+    <text x="24" y="24" class="mono ink-fill" font-size="11" font-weight="800">
+      ENGINEERED FOR RESILIENCE <tspan class="red-txt">//</tspan> NO FOREIGN DEPENDENCIES
+    </text>
+
+    <text x="752" y="24" text-anchor="end" class="mono ink-fill" font-size="11" font-weight="800">
+      VERIFIED (2026) <tspan class="red-txt">●</tspan>
+    </text>
+  </g>
+</svg>

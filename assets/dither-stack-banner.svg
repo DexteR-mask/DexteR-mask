@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 64" width="100%" height="64">
+  <defs>
+    <style>
+      @keyframes redPulse {
+        0%, 100% { opacity: 1; transform: scale(1); }
+        50% { opacity: 0.35; transform: scale(0.85); }
+      }
+      .beacon { animation: redPulse 2s infinite ease-in-out; }
+      .mono { font-family: "SF Mono", "Consolas", "Courier New", monospace; letter-spacing: 0.06em; }
+      .grotesk-bold { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-weight: 900; text-transform: uppercase; }
+
+      .banner-bg { fill: #f1efe9; }
+      .banner-border { stroke: #111625; }
+      .ink-fill { fill: #111625; }
+      .inverted-text { fill: #f1efe9; }
+      .red-txt { fill: #ef233c; }
+
+      @media (prefers-color-scheme: dark) {
+        .banner-bg { fill: #0a0d14; }
+        .banner-border { stroke: #262d3d; }
+        .ink-fill { fill: #f0f3f8; }
+        .inverted-text { fill: #0a0d14; }
+        .red-txt { fill: #ff2a4b; }
+      }
+    </style>
+  </defs>
+
+  <!-- Outer Shell -->
+  <rect x="2" y="2" width="796" height="60" fill="none" class="banner-border" stroke-width="2" rx="3" />
+
+  <!-- Left Spec Pill -->
+  <rect x="2" y="2" width="140" height="60" fill="none" class="banner-border" stroke-width="2" />
+  <circle cx="24" cy="32" r="4.5" class="red-txt beacon" />
+  <text x="36" y="36" class="mono red-txt" font-size="12" font-weight="800">//SPEC:03</text>
+
+  <!-- Center Solid Header Bar -->
+  <rect x="142" y="2" width="480" height="60" class="ink-fill" />
+  <text x="382" y="38" text-anchor="middle" class="inverted-text grotesk-bold" font-size="14" letter-spacing="0.12em">TECHNICAL CAPABILITIES &amp; INFRASTRUCTURE</text>
+
+  <!-- Right Glyph Tag -->
+  <g transform="translate(636, 18)" class="ink-fill">
+    <rect x="0" y="0" width="6" height="6" /><rect x="12" y="0" width="6" height="6" />
+    <rect x="6" y="6" width="6" height="6" />
+    <rect x="0" y="12" width="6" height="6" /><rect x="12" y="12" width="6" height="6" />
+
+    <g transform="translate(30, 0)">
+      <rect x="0" y="0" width="6" height="6" /><rect x="12" y="0" width="6" height="6" />
+      <rect x="6" y="6" width="6" height="6" />
+      <rect x="0" y="12" width="6" height="6" /><rect x="12" y="12" width="6" height="6" />
+    </g>
+
+    <g transform="translate(60, 0)">
+      <rect x="0" y="0" width="6" height="6" /><rect x="12" y="0" width="6" height="6" />
+      <rect x="6" y="6" width="6" height="6" />
+      <rect x="0" y="12" width="6" height="6" /><rect x="12" y="12" width="6" height="6" />
+    </g>
+
+    <g transform="translate(90, 0)">
+      <rect x="0" y="0" width="6" height="6" /><rect x="12" y="0" width="6" height="6" />
+      <rect x="6" y="6" width="6" height="6" />
+      <rect x="0" y="12" width="6" height="6" /><rect x="12" y="12" width="6" height="6" />
+    </g>
+
+    <g transform="translate(120, 0)">
+      <rect x="0" y="0" width="6" height="6" /><rect x="12" y="0" width="6" height="6" />
+      <rect x="6" y="6" width="6" height="6" />
+      <rect x="0" y="12" width="6" height="6" /><rect x="12" y="12" width="6" height="6" />
+    </g>
+  </g>
+</svg>
