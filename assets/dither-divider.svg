@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 24" width="100%" height="24">
+  <defs>
+    <pattern id="dotDither" width="6" height="6" patternUnits="userSpaceOnUse">
+      <rect width="2" height="2" fill="#30363d" />
+      <rect x="3" y="3" width="2" height="2" fill="#30363d" />
+    </pattern>
+  </defs>
+  <rect x="0" y="10" width="900" height="4" fill="url(#dotDither)" />
+  <rect x="380" y="4" width="140" height="16" fill="#0d1117" stroke="#30363d" stroke-width="1" rx="2" />
+  <text x="450" y="15" text-anchor="middle" font-family="monospace" font-size="9" fill="#8b949e" letter-spacing="0.12em">&lt; DITHER // SPECS &gt;</text>
+</svg>

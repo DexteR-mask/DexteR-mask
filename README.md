@@ -1,44 +1,50 @@
 <div align="center">
 
-  <!-- Layered Gradient Wave Header Banner -->
+  <!-- Ditherpunk & Industrial Spec Header Banner -->
   <a href="https://jaspreetlabs.is-a.dev/">
-    <img src="./assets/header-wave.svg" width="100%" alt="Jaspreet Singh - Systems & Architecture" />
+    <img src="./assets/banner-dither-tech.svg" width="100%" alt="Jaspreet Singh - Engineered for Resilience" />
   </a>
 
   <!-- Dynamic Typing Subtitle Animation -->
   <a href="https://jaspreetlabs.is-a.dev/">
-    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=20&pause=1400&color=38BDF8&center=true&vCenter=true&width=640&height=44&lines=Backend+Systems+%26+Distributed+Architecture;High-Throughput+APIs+%26+Payment+Pipelines;Local+GPU+Inference+Clusters+(vLLM+%E2%80%A2+llama.cpp);Developer+Tooling+%26+High-Concurrency+Engines" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=18&pause=1400&color=38BDF8&center=true&vCenter=true&width=640&height=40&lines=%2F%2F+BACKEND+SYSTEMS+%26+DISTRIBUTED+ARCHITECTURE;%2F%2F+HIGH-THROUGHPUT+APIS+%26+IDEMPOTENT+PAYMENTS;%2F%2F+LOCAL+GPU+INFERENCE+CLUSTERS+(ROCm+%E2%80%A2+vLLM);%2F%2F+TERMINAL-FIRST+DEVELOPER+TOOLING" alt="Typing SVG" />
   </a>
 
   <br />
 
-  <!-- Premium Interactive Action Links -->
+  <!-- Industrial High-Contrast Action Badges -->
   <p align="center">
     <a href="https://jaspreetlabs.is-a.dev/">
-      <img src="https://img.shields.io/badge/Live_Portfolio-jaspreetlabs.is--a.dev-0284c7?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live Portfolio" />
+      <img src="https://img.shields.io/badge/PORTFOLIO-jaspreetlabs.is--a.dev-0d1117?style=for-the-badge&logo=googlechrome&logoColor=38bdf8" alt="Live Portfolio" />
     </a>
     &nbsp;
     <a href="https://jaspreetlabs.is-a.dev/resume/">
-      <img src="https://img.shields.io/badge/Interactive_CV-Online_Resume-4f46e5?style=for-the-badge&logo=read-the-docs&logoColor=white" alt="Online Resume" />
+      <img src="https://img.shields.io/badge/INTERACTIVE_CV-ONLINE_RESUME-0d1117?style=for-the-badge&logo=read-the-docs&logoColor=f0f6fc" alt="Online Resume" />
     </a>
     &nbsp;
     <a href="https://www.linkedin.com/in/jaspreet-singh-71578a220/">
-      <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+      <img src="https://img.shields.io/badge/LINKEDIN-CONNECT-0d1117?style=for-the-badge&logo=linkedin&logoColor=38bdf8" alt="LinkedIn" />
     </a>
   </p>
 
-  <!-- Waving Gradient Wave Divider -->
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0284c7,6366f1,9333ea&height=70&section=footer" width="100%" alt="Wave Divider" />
+  <!-- Dither Wave Divider -->
+  <img src="./assets/dither-divider.svg" width="100%" alt="Dither Divider" />
 
 </div>
 
 <br />
 
-### ⚡ About Me & Engineering Mindset
+### ⚡ Technical Spec & Core Philosophy
 
-I'm a backend and systems engineer fascinated by how complex software behaves under real concurrency and high transaction volume. My focus is on distributed architecture, low-latency API design, and building resilient microservices that fail predictably and recover seamlessly.
+```text
+/    ENGINEERED FOR RESILIENCE  >  DISTRIBUTED SYSTEMS
+/ >  HIGH-CONCURRENCY FINANCIAL LIFECYCLES • LOCAL GPU INFERENCE
+(2026) INPUT VERIFIED • ZERO FOREIGN DEPENDENCIES • STATUS: > ACTIVE
+```
 
-When I'm not architecting payment webhooks or tuning database query plans, you'll find me running private local LLM clusters on bare-metal GPUs, engineering terminal developer tools, or exploring distributed consensus protocols.
+I'm a backend and systems engineer driven by how software behaves under real concurrency and high transaction volume. I focus on distributed architecture, low-latency API design, and building resilient microservices that fail predictably and recover seamlessly.
+
+When I'm not architecting payment webhooks or tuning database query planners, you'll find me running private local LLM clusters on bare-metal GPUs, engineering terminal developer tools, or exploring distributed consensus protocols.
 
 - 🔭 **What I build:** High-throughput backend services, deterministic transaction lifecycles, and developer platforms.
 - 🧠 **Current rabbit hole:** Running private local LLMs with GPU acceleration (`vLLM`, `llama.cpp`) and streaming agent architectures.
@@ -49,10 +55,10 @@ When I'm not architecting payment webhooks or tuning database query plans, you'l
 
 ---
 
-### 📊 System Telemetry & Architecture Dashboard
+### 🖥️ Retro OS — Services & Telemetry Inspector
 
 <div align="center">
-  <img src="./assets/system-metrics-ui.svg" width="100%" alt="System Telemetry & Architecture Dashboard" />
+  <img src="./assets/retro-os-card.svg" width="100%" alt="Retro OS Services Inspector" />
 </div>
 
 <br />
@@ -88,12 +94,12 @@ When I'm not architecting payment webhooks or tuning database query plans, you'l
 
 <br />
 
-<!-- Wave Section Divider -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=9333ea,6366f1,0284c7&height=65&section=footer" width="100%" alt="Section Divider Wave" />
+<!-- Dither Divider -->
+<img src="./assets/dither-divider.svg" width="100%" alt="Dither Divider" />
 
 <br />
 
-### 💼 Featured Systems & Passion Builds
+### 💼 Featured Systems & Production Engineering
 
 <table>
   <tr>
@@ -101,7 +107,7 @@ When I'm not architecting payment webhooks or tuning database query plans, you'l
       <h3 align="center">📈 Bonds India Analytics</h3>
       <p align="center">
         <a href="https://bondsindia-production.up.railway.app/">
-          <img src="https://img.shields.io/badge/Live_Demo-Online-00c853?style=flat-square&logo=render&logoColor=white" alt="Live Demo" />
+          <img src="https://img.shields.io/badge/STATUS-ONLINE_DEMO-000000?style=flat-square&logo=render&logoColor=3fb950" alt="Live Demo" />
         </a>
       </p>
       <p>Full-scale analytics engine tracking and querying corporate bonds across NSE & BSE.</p>
@@ -115,7 +121,7 @@ When I'm not architecting payment webhooks or tuning database query plans, you'l
     <td width="50%" valign="top">
       <h3 align="center">🧠 Local LLM Inference Cluster</h3>
       <p align="center">
-        <img src="https://img.shields.io/badge/System-Self_Hosted-6366F1?style=flat-square&logo=openai&logoColor=white" alt="System" />
+        <img src="https://img.shields.io/badge/STATUS-SELF_HOSTED-000000?style=flat-square&logo=openai&logoColor=38bdf8" alt="System" />
       </p>
       <p>Private GPU-accelerated local inference cluster built on bare-metal AMD hardware.</p>
       <ul>
@@ -130,7 +136,7 @@ When I'm not architecting payment webhooks or tuning database query plans, you'l
     <td width="50%" valign="top">
       <h3 align="center">⚡ Hot-Reload Dev Engine</h3>
       <p align="center">
-        <img src="https://img.shields.io/badge/Internal-Core_Platform-0284c7?style=flat-square&logo=gnubash&logoColor=white" alt="Internal Core" />
+        <img src="https://img.shields.io/badge/STATUS-INTERNAL_CORE-000000?style=flat-square&logo=gnubash&logoColor=f0f6fc" alt="Internal Core" />
       </p>
       <p>Terminal-first developer productivity engine replacing UI-heavy sync workflows.</p>
       <ul>
@@ -142,7 +148,7 @@ When I'm not architecting payment webhooks or tuning database query plans, you'l
     <td width="50%" valign="top">
       <h3 align="center">🗄️ Universal Database Admin Suite</h3>
       <p align="center">
-        <img src="https://img.shields.io/badge/Internal-Enterprise_Tool-f59e0b?style=flat-square&logo=databricks&logoColor=white" alt="Enterprise Tool" />
+        <img src="https://img.shields.io/badge/STATUS-ENTERPRISE_TOOL-000000?style=flat-square&logo=databricks&logoColor=f59e0b" alt="Enterprise Tool" />
       </p>
       <p>Database-agnostic operations cockpit handling complex cross-database administration.</p>
       <ul>
@@ -156,7 +162,7 @@ When I'm not architecting payment webhooks or tuning database query plans, you'l
 
 <br />
 
-### 📬 Let's Connect
+### 📬 Direct Communications & Connect
 
 <div align="center">
 
@@ -164,23 +170,21 @@ When I'm not architecting payment webhooks or tuning database query plans, you'l
 
   <p>
     <a href="https://jaspreetlabs.is-a.dev/">
-      <img src="https://img.shields.io/badge/Portfolio-jaspreetlabs.is--a.dev-0284c7?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" />
+      <img src="https://img.shields.io/badge/PORTFOLIO-jaspreetlabs.is--a.dev-0d1117?style=for-the-badge&logo=googlechrome&logoColor=38bdf8" alt="Portfolio" />
     </a>
     &nbsp;
     <a href="https://www.linkedin.com/in/jaspreet-singh-71578a220/">
-      <img src="https://img.shields.io/badge/LinkedIn-Jaspreet_Singh-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+      <img src="https://img.shields.io/badge/LINKEDIN-Jaspreet_Singh-0d1117?style=for-the-badge&logo=linkedin&logoColor=38bdf8" alt="LinkedIn" />
     </a>
     &nbsp;
     <a href="mailto:jaspreet.singh.tech@gmail.com">
-      <img src="https://img.shields.io/badge/Email-jaspreet.singh.tech%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+      <img src="https://img.shields.io/badge/EMAIL-jaspreet.singh.tech%40gmail.com-0d1117?style=for-the-badge&logo=gmail&logoColor=ea4335" alt="Email" />
     </a>
   </p>
 
   <br />
 
-  <!-- Closing Gradient Wave Footer Banner -->
-  <a href="https://jaspreetlabs.is-a.dev/">
-    <img src="./assets/footer-wave.svg" width="100%" alt="Footer Wave Banner" />
-  </a>
+  <!-- Dither Bottom Border -->
+  <img src="./assets/dither-divider.svg" width="100%" alt="Dither Footer Divider" />
 
 </div>

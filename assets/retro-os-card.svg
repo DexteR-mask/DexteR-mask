@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 430" width="100%" height="100%">
+  <defs>
+    <!-- Dither checkerboard pattern for scrollbar -->
+    <pattern id="scrollDither" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="2" height="2" fill="#d0c9bc" />
+      <rect x="2" y="2" width="2" height="2" fill="#d0c9bc" />
+    </pattern>
+  </defs>
+
+  <style>
+    .os-mono { font-family: "SF Mono", "Courier New", monospace; font-size: 12px; fill: #1c1d1f; }
+    .os-title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-weight: 700; font-size: 13px; fill: #1c1d1f; }
+    .code-tree { font-family: "SF Mono", "Fira Code", monospace; font-size: 12px; fill: #1c1d1f; line-height: 1.6; }
+  </style>
+
+  <!-- Drop Shadow -->
+  <rect x="8" y="8" width="864" height="414" rx="10" fill="#000000" opacity="0.65" />
+
+  <!-- Retro Window Frame -->
+  <rect x="0" y="0" width="864" height="414" rx="10" fill="#f4f1ea" stroke="#1c1d1f" stroke-width="2.5" />
+
+  <!-- Title Bar -->
+  <rect x="0" y="0" width="864" height="36" rx="10" fill="#eae4d6" stroke="#1c1d1f" stroke-width="2.5" />
+  <rect x="0" y="26" width="864" height="10" fill="#eae4d6" />
+  <line x1="0" y1="36" x2="864" y2="36" stroke="#1c1d1f" stroke-width="2" />
+
+  <!-- Window Dots -->
+  <circle cx="20" cy="18" r="5" fill="#1c1d1f" />
+  <circle cx="36" cy="18" r="5" fill="#1c1d1f" />
+  <circle cx="52" cy="18" r="5" fill="#1c1d1f" />
+
+  <!-- Window Title -->
+  <text x="432" y="23" text-anchor="middle" class="os-title">DexteR-mask — System &amp; Services Inspector [v2.6]</text>
+
+  <!-- Left Sidebar (Tree View) -->
+  <rect x="0" y="36" width="240" height="378" fill="#ede7dc" />
+  <line x1="240" y1="36" x2="240" y2="414" stroke="#1c1d1f" stroke-width="2" />
+
+  <g transform="translate(18, 65)" class="code-tree">
+    <text x="0" y="0" font-weight="bold">📁 SERVICES</text>
+    <text x="12" y="24">├── ⚡ payments-core</text>
+    <text x="12" y="48">├── 📈 bonds-india</text>
+    <text x="12" y="72">├── 🧠 local-vllm</text>
+    <text x="12" y="96">└── 🛠️ hot-reload-cli</text>
+
+    <text x="0" y="136" font-weight="bold">📁 RUNTIMES</text>
+    <text x="12" y="160">├── 🐹 Go 1.23</text>
+    <text x="12" y="184">├── 🟦 TypeScript</text>
+    <text x="12" y="208">├── 🐳 Docker Engine</text>
+    <text x="12" y="232">└── 🗄️ Redis / Postgres</text>
+
+    <text x="0" y="272" font-weight="bold">📁 ENVIRONMENT</text>
+    <text x="12" y="296">└── 🖥️ Linux x86_64</text>
+  </g>
+
+  <!-- Right Content View -->
+  <!-- Top Spec Tag Bar -->
+  <g transform="translate(260, 56)">
+    <rect x="0" y="0" width="130" height="24" fill="#1c1d1f" rx="3" />
+    <text x="65" y="16" text-anchor="middle" class="os-mono" font-size="11" fill="#f4f1ea" font-weight="bold">INPUT VERIFIED</text>
+    <text x="145" y="16" class="os-mono" font-size="11" fill="#5c6068">// LOC: DISTRIBUTED // KERNEL: HARDENED</text>
+  </g>
+
+  <!-- Segmented Pixel Progress Bars (Image 1 Style) -->
+  <g transform="translate(260, 105)">
+    <!-- Metric 1: Payment Lifecycle Concurrency -->
+    <text x="0" y="0" class="os-mono" font-weight="bold">PAYMENT LIFECYCLE &amp; IDEMPOTENCY</text>
+    <text x="560" y="0" text-anchor="end" class="os-mono" font-weight="bold">99.99% // ZERO LOSS</text>
+    
+    <!-- Segmented Blocks Row -->
+    <g transform="translate(0, 10)">
+      <!-- 24 blocks: 23 active, 1 idle -->
+      <rect x="0" y="0" width="18" height="9" fill="#1c1d1f" /><rect x="22" y="0" width="18" height="9" fill="#1c1d1f" />
+      <rect x="44" y="0" width="18" height="9" fill="#1c1d1f" /><rect x="66" y="0" width="18" height="9" fill="#1c1d1f" />
+      <rect x="88" y="0" width="18" height="9" fill="#1c1d1f" /><rect x="110" y="0" width="18" height="9" fill="#1c1d1f" />
+      <rect x="132" y="0" width="18" height="9" fill="#1c1d1f" /><rect x="154" y="0" width="18" height="9" fill="#1c1d1f" />
+      <rect x="176" y="0" width="18" height="9" fill="#1c1d1f" /><rect x="198" y="0" width="18" height="9" fill="#1c1d1f" />
+      <rect x="220" y="0" width="18" height="9" fill="#1c1d1f" /><rect x="242" y="0" width="18" height="9" fill="#1c1d1f" />
+      <rect x="264" y="0" width="18" height="9" fill="#1c1d1f" /><rect x="286" y="0" width="18" height="9" fill="#1c1d1f" />
+      <rect x="308" y="0" width="18" height="9" fill="#1c1d1f" /><rect x="330" y="0" width="18" height="9" fill="#1c1d1f" />
+      <rect x="352" y="0" width="18" height="9" fill="#1c1d1f" /><rect x="374" y="0" width="18" height="9" fill="#1c1d1f" />
+      <rect x="396" y="0" width="18" height="9" fill="#1c1d1f" /><rect x="418" y="0" width="18" height="9" fill="#1c1d1f" />
+      <rect x="440" y="0" width="18" height="9" fill="#1c1d1f" /><rect x="462" y="0" width="18" height="9" fill="#1c1d1f" />
+      <rect x="484" y="0" width="18" height="9" fill="#1c1d1f" /><rect x="506" y="0" width="18" height="9" fill="#1c1d1f" />
+      <rect x="528" y="0" width="18" height="9" fill="#d0c9bc" /><rect x="550" y="0" width="18" height="9" fill="#d0c9bc" />
+    </g>
+  </g>
+
+  <g transform="translate(260, 160)">
+    <!-- Metric 2: API P99 Latency -->
+    <text x="0" y="0" class="os-mono" font-weight="bold">API P99 LATENCY BENCHMARK</text>
+    <text x="560" y="0" text-anchor="end" class="os-mono" font-weight="bold">11.4 ms // SUB-15MS</text>
+    
+    <g transform="translate(0, 10)">
+      <rect x="0" y="0" width="18" height="9" fill="#1c1d1f" /><rect x="22" y="0" width="18" height="9" fill="#1c1d1f" />
+      <rect x="44" y="0" width="18" height="9" fill="#1c1d1f" /><rect x="66" y="0" width="18" height="9" fill="#1c1d1f" />
+      <rect x="88" y="0" width="18" height="9" fill="#1c1d1f" /><rect x="110" y="0" width="18" height="9" fill="#1c1d1f" />
+      <rect x="132" y="0" width="18" height="9" fill="#1c1d1f" /><rect x="154" y="0" width="18" height="9" fill="#1c1d1f" />
+      <rect x="176" y="0" width="18" height="9" fill="#1c1d1f" /><rect x="198" y="0" width="18" height="9" fill="#1c1d1f" />
+      <rect x="220" y="0" width="18" height="9" fill="#1c1d1f" /><rect x="242" y="0" width="18" height="9" fill="#1c1d1f" />
+      <rect x="264" y="0" width="18" height="9" fill="#1c1d1f" /><rect x="286" y="0" width="18" height="9" fill="#1c1d1f" />
+      <rect x="308" y="0" width="18" height="9" fill="#1c1d1f" /><rect x="330" y="0" width="18" height="9" fill="#1c1d1f" />
+      <rect x="352" y="0" width="18" height="9" fill="#1c1d1f" /><rect x="374" y="0" width="18" height="9" fill="#1c1d1f" />
+      <rect x="396" y="0" width="18" height="9" fill="#1c1d1f" /><rect x="418" y="0" width="18" height="9" fill="#1c1d1f" />
+      <rect x="440" y="0" width="18" height="9" fill="#d0c9bc" /><rect x="462" y="0" width="18" height="9" fill="#d0c9bc" />
+      <rect x="484" y="0" width="18" height="9" fill="#d0c9bc" /><rect x="506" y="0" width="18" height="9" fill="#d0c9bc" />
+      <rect x="528" y="0" width="18" height="9" fill="#d0c9bc" /><rect x="550" y="0" width="18" height="9" fill="#d0c9bc" />
+    </g>
+  </g>
+
+  <g transform="translate(260, 215)">
+    <!-- Metric 3: Local GPU Cluster Throughput -->
+    <text x="0" y="0" class="os-mono" font-weight="bold">LOCAL AI COMPUTE (vLLM • ROCm)</text>
+    <text x="560" y="0" text-anchor="end" class="os-mono" font-weight="bold">74.2 tok/s // BARE METAL</text>
+    
+    <g transform="translate(0, 10)">
+      <rect x="0" y="0" width="18" height="9" fill="#1c1d1f" /><rect x="22" y="0" width="18" height="9" fill="#1c1d1f" />
+      <rect x="44" y="0" width="18" height="9" fill="#1c1d1f" /><rect x="66" y="0" width="18" height="9" fill="#1c1d1f" />
+      <rect x="88" y="0" width="18" height="9" fill="#1c1d1f" /><rect x="110" y="0" width="18" height="9" fill="#1c1d1f" />
+      <rect x="132" y="0" width="18" height="9" fill="#1c1d1f" /><rect x="154" y="0" width="18" height="9" fill="#1c1d1f" />
+      <rect x="176" y="0" width="18" height="9" fill="#1c1d1f" /><rect x="198" y="0" width="18" height="9" fill="#1c1d1f" />
+      <rect x="220" y="0" width="18" height="9" fill="#1c1d1f" /><rect x="242" y="0" width="18" height="9" fill="#1c1d1f" />
+      <rect x="264" y="0" width="18" height="9" fill="#1c1d1f" /><rect x="286" y="0" width="18" height="9" fill="#1c1d1f" />
+      <rect x="308" y="0" width="18" height="9" fill="#1c1d1f" /><rect x="330" y="0" width="18" height="9" fill="#1c1d1f" />
+      <rect x="352" y="0" width="18" height="9" fill="#1c1d1f" /><rect x="374" y="0" width="18" height="9" fill="#1c1d1f" />
+      <rect x="396" y="0" width="18" height="9" fill="#1c1d1f" /><rect x="418" y="0" width="18" height="9" fill="#1c1d1f" />
+      <rect x="440" y="0" width="18" height="9" fill="#1c1d1f" /><rect x="462" y="0" width="18" height="9" fill="#d0c9bc" />
+      <rect x="484" y="0" width="18" height="9" fill="#d0c9bc" /><rect x="506" y="0" width="18" height="9" fill="#d0c9bc" />
+      <rect x="528" y="0" width="18" height="9" fill="#d0c9bc" /><rect x="550" y="0" width="18" height="9" fill="#d0c9bc" />
+    </g>
+  </g>
+
+  <!-- Bottom Industrial Action Bar (Image 2 style) -->
+  <g transform="translate(260, 290)">
+    <rect x="0" y="0" width="570" height="90" fill="#eae4d6" stroke="#1c1d1f" stroke-width="1.5" rx="4" />
+    
+    <!-- Left badge -->
+    <text x="18" y="28" class="os-mono" font-weight="bold" font-size="12">DOMESTIC OPERATIONS LAB</text>
+    <text x="18" y="48" class="os-mono" font-size="11" fill="#5c6068">[ RE-IND / DOL / 041 ]</text>
+    <text x="18" y="70" class="os-mono" font-size="11" font-weight="bold">NO FLAKY DEPENDENCIES &gt; BUILT FOR SCALE</text>
+
+    <!-- Right Stamp Badge -->
+    <rect x="430" y="16" width="120" height="58" fill="#1c1d1f" rx="3" />
+    <text x="490" y="38" text-anchor="middle" class="os-mono" font-size="10" fill="#f4f1ea">QUALITY PASS</text>
+    <text x="490" y="56" text-anchor="middle" class="os-mono" font-size="14" font-weight="bold" fill="#3fb950">[ 03 ] VERIFIED</text>
+  </g>
+
+  <!-- Dithered Scrollbar Track (Right edge, Image 3 style) -->
+  <rect x="844" y="36" width="20" height="378" fill="url(#scrollDither)" />
+  <line x1="844" y1="36" x2="844" y2="414" stroke="#1c1d1f" stroke-width="1.5" />
+  <!-- Scrollbar Up/Down Arrows -->
+  <rect x="844" y="36" width="20" height="20" fill="#eae4d6" stroke="#1c1d1f" stroke-width="1" />
+  <path d="M 854 42 L 849 50 L 859 50 Z" fill="#1c1d1f" />
+  <!-- Thumb -->
+  <rect x="845" y="76" width="18" height="60" fill="#eae4d6" stroke="#1c1d1f" stroke-width="1" />
+  <!-- Down Arrow -->
+  <rect x="844" y="394" width="20" height="20" fill="#eae4d6" stroke="#1c1d1f" stroke-width="1" />
+  <path d="M 854 408 L 849 400 L 859 400 Z" fill="#1c1d1f" />
+
+</svg>
